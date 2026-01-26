@@ -1,0 +1,17 @@
+
+> matchhai-website@1.0.0 dev
+> next dev --hostname 0.0.0.0 --port 3000
+
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3000
+  - Network:      http://0.0.0.0:3000
+
+ ✓ Starting...
+ ✓ Ready in 13.6s
+ ○ Compiling / ...
+ GET / 500 in 46986ms
+ ✓ Compiled /games in 2.1s (1463 modules)
+ GET /games/ 200 in 2938ms
+ ○ Compiling /how-it-works ...
+ ✓ Compiled /how-it-works in 726ms (1468 modules)
+[?25h

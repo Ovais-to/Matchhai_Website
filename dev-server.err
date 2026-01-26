@@ -1,0 +1,42 @@
+ ⨯ ./components/home/Hero3D.tsx:5:1
+Module not found: Can't resolve '@react-three/postprocessing'
+[0m [90m 3 |[39m [36mimport[39m { [33mCanvas[39m[33m,[39m useFrame[33m,[39m useThree } [36mfrom[39m [32m"@react-three/fiber"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mFloat[39m[33m,[39m [33mImage[39m[33m,[39m [33mPoints[39m } [36mfrom[39m [32m"@react-three/drei"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mEffectComposer[39m[33m,[39m [33mBloom[39m } [36mfrom[39m [32m"@react-three/postprocessing"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m [36mimport[39m { [33mSuspense[39m[33m,[39m useMemo[33m,[39m useRef } [36mfrom[39m [32m"react"[39m[33m;[39m[0m
+[0m [90m 7 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mTHREE[39m [36mfrom[39m [32m"three"[39m[33m;[39m[0m
+[0m [90m 8 |[39m [36mimport[39m { assets } [36mfrom[39m [32m"@/lib/assets"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./components/home/Hero.tsx
+ ⨯ ./components/home/Hero3D.tsx:5:1
+Module not found: Can't resolve '@react-three/postprocessing'
+[0m [90m 3 |[39m [36mimport[39m { [33mCanvas[39m[33m,[39m useFrame[33m,[39m useThree } [36mfrom[39m [32m"@react-three/fiber"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mFloat[39m[33m,[39m [33mImage[39m[33m,[39m [33mPoints[39m } [36mfrom[39m [32m"@react-three/drei"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mEffectComposer[39m[33m,[39m [33mBloom[39m } [36mfrom[39m [32m"@react-three/postprocessing"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m [36mimport[39m { [33mSuspense[39m[33m,[39m useMemo[33m,[39m useRef } [36mfrom[39m [32m"react"[39m[33m;[39m[0m
+[0m [90m 7 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mTHREE[39m [36mfrom[39m [32m"three"[39m[33m;[39m[0m
+[0m [90m 8 |[39m [36mimport[39m { assets } [36mfrom[39m [32m"@/lib/assets"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./components/home/Hero.tsx
+ ⨯ ./components/home/Hero3D.tsx:5:1
+Module not found: Can't resolve '@react-three/postprocessing'
+[0m [90m 3 |[39m [36mimport[39m { [33mCanvas[39m[33m,[39m useFrame[33m,[39m useThree } [36mfrom[39m [32m"@react-three/fiber"[39m[33m;[39m[0m
+[0m [90m 4 |[39m [36mimport[39m { [33mFloat[39m[33m,[39m [33mImage[39m[33m,[39m [33mPoints[39m } [36mfrom[39m [32m"@react-three/drei"[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 |[39m [36mimport[39m { [33mEffectComposer[39m[33m,[39m [33mBloom[39m } [36mfrom[39m [32m"@react-three/postprocessing"[39m[33m;[39m[0m
+[0m [90m   |[39m [31m[1m^[22m[39m[0m
+[0m [90m 6 |[39m [36mimport[39m { [33mSuspense[39m[33m,[39m useMemo[33m,[39m useRef } [36mfrom[39m [32m"react"[39m[33m;[39m[0m
+[0m [90m 7 |[39m [36mimport[39m [33m*[39m [36mas[39m [33mTHREE[39m [36mfrom[39m [32m"three"[39m[33m;[39m[0m
+[0m [90m 8 |[39m [36mimport[39m { assets } [36mfrom[39m [32m"@/lib/assets"[39m[33m;[39m[0m
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./components/home/Hero.tsx

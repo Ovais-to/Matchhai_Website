@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --color-bg-primary: #0f1115;
+  --color-bg-secondary: #151821;
+  --color-bg-tertiary: #1f2430;
+  --color-primary: #6bb7ff;
+  --color-primary-hover: #86c7ff;
+  --color-secondary: #d6b26f;
+  --color-success: #22c55e;
+  --color-error: #ef4444;
+  --color-text-primary: #f4f6f9;
+  --color-text-secondary: #d2d8e2;
+  --color-text-muted: #a3adbe;
+  --font-heading: "Montserrat", "Segoe UI", sans-serif;
+  --font-body: "Raleway", "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply bg-bg-primary text-text-primary antialiased;
+  font-family: var(--font-body);
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.number-badge {
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  aspect-ratio: 1 / 1;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .number-badge {
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+a {
+  @apply text-text-primary;
+}
+
+.skip-link {
+  @apply sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:rounded-lg focus:bg-bg-tertiary focus:px-4 focus:py-2 focus:text-text-primary;
+}
+
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary;
+}
+
+.section {
+  @apply py-14 md:py-20;
+}
+
+.container {
+  @apply mx-auto w-full max-w-6xl px-4 md:px-6;
+}
+
+.page-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(38% 28% at 14% 12%, rgba(107, 183, 255, 0.08), transparent 70%),
+    radial-gradient(34% 28% at 88% 16%, rgba(214, 178, 111, 0.08), transparent 70%),
+    linear-gradient(180deg, #0f1115 0%, #141821 55%, #0e1014 100%);
+}
+
+.page-background::before,
+.page-background::after {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  pointer-events: none;
+}
+
+.page-background::before {
+  background:
+    radial-gradient(28% 22% at 18% 30%, rgba(107, 183, 255, 0.12), transparent 70%),
+    radial-gradient(26% 22% at 72% 22%, rgba(214, 178, 111, 0.12), transparent 70%);
+  filter: blur(80px);
+  opacity: 0.55;
+  animation: bloom-drift 18s ease-in-out infinite;
+}
+
+.page-background::after {
+  background:
+    radial-gradient(16% 14% at 28% 78%, rgba(214, 178, 111, 0.1), transparent 70%),
+    radial-gradient(18% 16% at 84% 64%, rgba(107, 183, 255, 0.1), transparent 70%);
+  opacity: 0.35;
+  animation: bloom-drift-alt 22s ease-in-out infinite;
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes bloom-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(1.5%, -1%, 0);
+  }
+}
+
+@keyframes bloom-drift-alt {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-1.2%, 1.2%, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-background::before,
+  .page-background::after {
+    animation: none;
+  }
+}
