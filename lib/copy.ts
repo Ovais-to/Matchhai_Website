@@ -198,22 +198,17 @@ export const copy = {
     },
     pricing: {
       title: "Pricing (Coming Soon)",
-      intro: "All prices will be in Pakistani Rupees (PKR). Final plans and billing will be published before launch.",
+      intro: "User pricing packages are listed in Pakistani Rupees (PKR). Final billing details will be published before launch.",
       plans: [
         {
-          name: "Players",
-          price: "Rs. 0",
-          description: "Free player profile, matchmaking access, and join requests at launch."
+          name: "User Package 1",
+          price: "Rs. 100",
+          description: "Starter user package for basic matchmaking and team participation."
         },
         {
-          name: "Teams",
-          price: "Rs. 0",
-          description: "Free team creation, role management, and matchroom coordination at launch."
-        },
-        {
-          name: "Zones & Courts",
-          price: "Rs. XXXX / month",
-          description: "Venue onboarding, pricing tiers, and booking intent management (final pricing coming soon)."
+          name: "User Package 2",
+          price: "Rs. 200",
+          description: "Advanced user package with enhanced matchmaking and team workflow access."
         }
       ],
       note: "All published prices on MatchHai will be shown in PKR."
