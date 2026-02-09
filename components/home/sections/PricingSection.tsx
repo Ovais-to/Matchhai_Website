@@ -39,11 +39,7 @@ export const PricingSection = () => {
           ))}
         </div>
 
-        <p className="mt-5 text-xs text-text-muted sm:text-sm" data-reveal>
-          {copy.home.pricing.note}
-        </p>
       </div>
     </section>
   );
 };
-

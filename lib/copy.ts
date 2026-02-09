@@ -210,8 +210,7 @@ export const copy = {
           price: "Rs. 200",
           description: "Advanced user package with enhanced matchmaking and team workflow access."
         }
-      ],
-      note: "All published prices on MatchHai will be shown in PKR."
+      ]
     },
     ctaStrip: {
     title: "Ready to play or list your zone or court?",
