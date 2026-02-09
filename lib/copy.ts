@@ -11,8 +11,8 @@ type StatusedItem = {
 export const copy = {
   site: {
     name: "MatchHai",
-    legalName: "MatchHai (Private) Limited",
-    location: "Karachi, Pakistan",
+    legalName: "MatchHai",
+    location: "B5, 2nd Floor, Haq Square Garden East, Karachi",
     description:
       "MatchHai is a Pakistan-first esports matchmaking platform, with LAN gaming (PC + console) and sports bookings coming soon.",
     defaultMeta: {
@@ -38,6 +38,7 @@ export const copy = {
       { label: "Games", href: `${routes.home}#games` },
       { label: "Zones", href: `${routes.home}#audience` },
       { label: "Trust", href: `${routes.home}#trust` },
+      { label: "Pricing", href: `${routes.home}#pricing` },
       { label: "Contact", href: `${routes.home}#contact` },
       { label: "Download", href: `${routes.home}#download` }
     ],
@@ -65,7 +66,7 @@ export const copy = {
     eyebrow: "Pakistan-first esports matchmaking — LAN + sports bookings coming soon",
     title: "Squad Up. Play.",
     subtitle:
-      "MatchHai is building a LAN-first (PC + console) experience for esports (CS2, FC 26, Tekken 8) and sports (Indoor Cricket, Futsal, Padel, Pickleball) where players can find matchups, form teams, and book venues — all in one workflow.",
+      "MatchHai is a production-stage platform for esports (CS2, FC 26, Tekken 8) and sports (Indoor Cricket, Futsal, Padel, Pickleball), where players can find matchups, build teams, and book venues in one workflow. Public launch is coming soon.",
     badges: [
       { label: "Matchrooms", status: "COMING_SOON" as FeatureStatus },
       { label: "Teams", status: "COMING_SOON" as FeatureStatus },
@@ -115,7 +116,7 @@ export const copy = {
     whatIs: {
       title: "What is MatchHai?",
       description:
-        "A LAN-first matchmaking and booking platform for esports (CS2, FC 26, Tekken 8) and sports (Indoor Cricket, Futsal, Padel, Pickleball) — coming soon.",
+        "MatchHai brings matchmaking, team management, and venue booking into a single flow for esports and sports communities in Pakistan. The platform is in production and launching soon.",
       pillars: [
         {
           title: "Players",
@@ -194,6 +195,28 @@ export const copy = {
             "Optimized for Pakistani networks and low-end Android devices."
         }
       ]
+    },
+    pricing: {
+      title: "Pricing (Coming Soon)",
+      intro: "All prices will be in Pakistani Rupees (PKR). Final plans and billing will be published before launch.",
+      plans: [
+        {
+          name: "Players",
+          price: "Rs. 0",
+          description: "Free player profile, matchmaking access, and join requests at launch."
+        },
+        {
+          name: "Teams",
+          price: "Rs. 0",
+          description: "Free team creation, role management, and matchroom coordination at launch."
+        },
+        {
+          name: "Zones & Courts",
+          price: "Rs. XXXX / month",
+          description: "Venue onboarding, pricing tiers, and booking intent management (final pricing coming soon)."
+        }
+      ],
+      note: "All published prices on MatchHai will be shown in PKR."
     },
     ctaStrip: {
     title: "Ready to play or list your zone or court?",
@@ -451,12 +474,13 @@ export const copy = {
   contact: {
     title: "Contact MatchHai",
     intro:
-      "We respond within 1–2 business days. For partnerships and press, use the contact form.",
+      "For partnerships, onboarding, and support, contact us through the form below. We respond within 1–2 business days.",
     detailsTitle: "Contact details",
     details: [
       { label: "Email", value: "matchhaiofficial@gmail.com" },
+      { label: "Phone", value: "+92 323 8249779" },
       { label: "Response time", value: "1–2 business days" },
-      { label: "Location", value: "Karachi, Pakistan" }
+      { label: "Business address", value: "B5, 2nd Floor, Haq Square Garden East, Karachi" }
     ]
   },
   legal: {
@@ -634,7 +658,7 @@ export const copy = {
   footer: {
     tagline: "LAN-first matchmaking, team building, and bookings — coming soon.",
     linksTitle: "Legal",
-    legal: "© 2025 MatchHai (Private) Limited. All rights reserved.",
+    legal: "© 2025 MatchHai. All rights reserved.",
     disclaimer:
       "MatchHai is in production and not live yet. Features are labeled as COMING SOON or PLANNED."
   },

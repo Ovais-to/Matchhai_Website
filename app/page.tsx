@@ -5,6 +5,7 @@ import { WhatIs } from "@/components/home/sections/WhatIs";
 import { HowItWorksPreview } from "@/components/home/sections/HowItWorksPreview";
 import { GamesPreview } from "@/components/home/sections/GamesPreview";
 import { TrustPreview } from "@/components/home/sections/TrustPreview";
+import { PricingSection } from "@/components/home/sections/PricingSection";
 import { ContactSection } from "@/components/home/sections/ContactSection";
 import { CTASection } from "@/components/home/sections/CTASection";
 import { copy } from "@/lib/copy";
@@ -23,6 +24,7 @@ export default function HomePage() {
       <HowItWorksPreview />
       <GamesPreview />
       <TrustPreview />
+      <PricingSection />
       <ContactSection />
       <CTASection />
     </>
