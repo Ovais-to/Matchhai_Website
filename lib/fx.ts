@@ -1,6 +1,6 @@
 export const fx = {
   neon: {
-    primary: "#6BB7FF",
+    primary: "#4885ED",
     secondary: "#D6B26F",
     haze: "#0F1115"
   },

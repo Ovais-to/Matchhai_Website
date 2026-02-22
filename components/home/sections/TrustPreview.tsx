@@ -22,7 +22,7 @@ export const TrustPreview = () => {
               data-card
               data-reveal
             >
-              <span className="mt-2 h-2.5 w-2.5 flex-shrink-0 rounded-full bg-brand-primary shadow-[0_0_12px_rgba(107,183,255,0.6)]" />
+              <span className="mt-2 h-2.5 w-2.5 flex-shrink-0 rounded-full bg-brand-primary shadow-[0_0_12px_rgb(var(--color-primary)/0.6)]" />
               <div>
                 <h3 className="text-lg font-semibold text-text-primary">
                   {item.title}

@@ -5,19 +5,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --color-bg-primary: #0b0e13;
-  --color-bg-secondary: #131723;
-  --color-bg-tertiary: #1b2232;
-  --color-primary: #6cc0ff;
-  --color-primary-hover: #8fd0ff;
-  --color-secondary: #d9b26c;
-  --color-success: #22c55e;
-  --color-error: #ef4444;
-  --color-text-primary: #f3f6fb;
-  --color-text-secondary: #c9d3e3;
-  --color-text-muted: #9aa6bb;
-  --color-border: #222a3b;
-  --color-ring: #6cc0ff;
+  --color-bg-primary: 11 14 19;
+  --color-bg-secondary: 19 23 35;
+  --color-bg-tertiary: 27 34 50;
+  --color-primary: 72 133 237;
+  --color-primary-hover: 106 156 240;
+  --color-secondary: 214 178 111;
+  --color-success: 34 197 94;
+  --color-error: 239 68 68;
+  --color-text-primary: 243 246 251;
+  --color-text-secondary: 201 211 227;
+  --color-text-muted: 154 166 187;
+  --color-border: 34 42 59;
+  --color-ring: 72 133 237;
   --font-heading: "Montserrat", "Segoe UI", sans-serif;
   --font-body: "Raleway", "Segoe UI", sans-serif;
 }
@@ -134,8 +134,8 @@ a {
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(38% 28% at 14% 12%, rgba(107, 183, 255, 0.08), transparent 70%),
-    radial-gradient(34% 28% at 88% 16%, rgba(214, 178, 111, 0.08), transparent 70%),
+    radial-gradient(38% 28% at 14% 12%, rgb(var(--color-primary) / 0.08), transparent 70%),
+    radial-gradient(34% 28% at 88% 16%, rgb(var(--color-secondary) / 0.08), transparent 70%),
     linear-gradient(180deg, #0f1115 0%, #141821 55%, #0e1014 100%);
 }
 
@@ -149,8 +149,8 @@ a {
 
 .page-background::before {
   background:
-    radial-gradient(28% 22% at 18% 30%, rgba(107, 183, 255, 0.12), transparent 70%),
-    radial-gradient(26% 22% at 72% 22%, rgba(214, 178, 111, 0.12), transparent 70%);
+    radial-gradient(28% 22% at 18% 30%, rgb(var(--color-primary) / 0.12), transparent 70%),
+    radial-gradient(26% 22% at 72% 22%, rgb(var(--color-secondary) / 0.12), transparent 70%);
   filter: blur(80px);
   opacity: 0.55;
   animation: bloom-drift 18s ease-in-out infinite;
@@ -158,8 +158,8 @@ a {
 
 .page-background::after {
   background:
-    radial-gradient(16% 14% at 28% 78%, rgba(214, 178, 111, 0.1), transparent 70%),
-    radial-gradient(18% 16% at 84% 64%, rgba(107, 183, 255, 0.1), transparent 70%);
+    radial-gradient(16% 14% at 28% 78%, rgb(var(--color-secondary) / 0.1), transparent 70%),
+    radial-gradient(18% 16% at 84% 64%, rgb(var(--color-primary) / 0.1), transparent 70%);
   opacity: 0.35;
   animation: bloom-drift-alt 22s ease-in-out infinite;
 }

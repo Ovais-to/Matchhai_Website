@@ -24,7 +24,7 @@ export const Card = ({ children, className, ...props }: CardProps) => {
         className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
           background:
-            "radial-gradient(120% 120% at 0% 0%, rgba(107, 183, 255, 0.08), transparent 60%), radial-gradient(120% 120% at 100% 0%, rgba(214, 178, 111, 0.08), transparent 60%)"
+            "radial-gradient(120% 120% at 0% 0%, rgb(var(--color-primary) / 0.08), transparent 60%), radial-gradient(120% 120% at 100% 0%, rgb(var(--color-secondary) / 0.08), transparent 60%)"
         }}
       />
       {children}

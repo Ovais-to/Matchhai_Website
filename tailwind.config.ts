@@ -6,29 +6,29 @@ const config: Config = {
     extend: {
       colors: {
         bg: {
-          primary: "var(--color-bg-primary)",
-          secondary: "var(--color-bg-secondary)",
-          tertiary: "var(--color-bg-tertiary)"
+          primary: "rgb(var(--color-bg-primary) / <alpha-value>)",
+          secondary: "rgb(var(--color-bg-secondary) / <alpha-value>)",
+          tertiary: "rgb(var(--color-bg-tertiary) / <alpha-value>)"
         },
         brand: {
-          primary: "var(--color-primary)",
-          primaryHover: "var(--color-primary-hover)",
-          secondary: "var(--color-secondary)"
+          primary: "rgb(var(--color-primary) / <alpha-value>)",
+          primaryHover: "rgb(var(--color-primary-hover) / <alpha-value>)",
+          secondary: "rgb(var(--color-secondary) / <alpha-value>)"
         },
         status: {
-          success: "var(--color-success)",
-          error: "var(--color-error)"
+          success: "rgb(var(--color-success) / <alpha-value>)",
+          error: "rgb(var(--color-error) / <alpha-value>)"
         },
-        border: "var(--color-border)",
-        ring: "var(--color-ring)",
+        border: "rgb(var(--color-border) / <alpha-value>)",
+        ring: "rgb(var(--color-ring) / <alpha-value>)",
         text: {
-          primary: "var(--color-text-primary)",
-          secondary: "var(--color-text-secondary)",
-          muted: "var(--color-text-muted)"
+          primary: "rgb(var(--color-text-primary) / <alpha-value>)",
+          secondary: "rgb(var(--color-text-secondary) / <alpha-value>)",
+          muted: "rgb(var(--color-text-muted) / <alpha-value>)"
         }
       },
       boxShadow: {
-        glow: "0 0 24px rgba(107, 183, 255, 0.28)"
+        glow: "0 0 24px rgb(var(--color-primary) / 0.28)"
       }
     }
   },

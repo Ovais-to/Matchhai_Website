@@ -18,8 +18,8 @@ export const AudienceSplit = () => {
           data-reveal
         >
           <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
-            <div className="absolute -top-24 left-0 h-48 w-48 rounded-full bg-brand-primary/12 blur-[80px]" />
-            <div className="absolute -bottom-24 right-0 h-48 w-48 rounded-full bg-brand-secondary/12 blur-[80px]" />
+            <div className="absolute -top-24 left-0 h-48 w-48 rounded-full bg-brand-primary/[0.12] blur-[80px]" />
+            <div className="absolute -bottom-24 right-0 h-48 w-48 rounded-full bg-brand-secondary/[0.12] blur-[80px]" />
           </div>
           <p className="section-kicker">
             {copy.audience.players.title}
@@ -44,8 +44,8 @@ export const AudienceSplit = () => {
           data-reveal
         >
           <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
-            <div className="absolute -top-24 right-0 h-48 w-48 rounded-full bg-brand-secondary/12 blur-[80px]" />
-            <div className="absolute -bottom-24 left-0 h-48 w-48 rounded-full bg-brand-primary/12 blur-[80px]" />
+            <div className="absolute -top-24 right-0 h-48 w-48 rounded-full bg-brand-secondary/[0.12] blur-[80px]" />
+            <div className="absolute -bottom-24 left-0 h-48 w-48 rounded-full bg-brand-primary/[0.12] blur-[80px]" />
           </div>
           <p className="section-kicker">
             {copy.audience.zones.title}

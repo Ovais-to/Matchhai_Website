@@ -36,7 +36,7 @@ export const Button = ({
     "focus-ring inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold tracking-[0.02em] transition-all duration-300 will-change-transform transform-gpu cursor-pointer sm:text-base";
   const styles =
     variant === "primary"
-      ? "bg-brand-primary text-bg-primary shadow-[0_10px_30px_rgba(107,183,255,0.18)] hover:-translate-y-0.5 hover:bg-brand-primaryHover hover:shadow-[0_14px_36px_rgba(107,183,255,0.25)]"
+      ? "bg-brand-primary text-bg-primary shadow-[0_10px_30px_rgb(var(--color-primary)/0.18)] hover:-translate-y-0.5 hover:bg-brand-primaryHover hover:shadow-[0_14px_36px_rgb(var(--color-primary)/0.25)]"
       : variant === "secondary"
         ? "border border-border bg-bg-secondary text-text-primary backdrop-blur-md hover:-translate-y-0.5 hover:border-text-muted/40 hover:bg-bg-tertiary"
         : "rounded-lg px-4 py-2 text-text-secondary hover:bg-bg-tertiary hover:text-text-primary";
