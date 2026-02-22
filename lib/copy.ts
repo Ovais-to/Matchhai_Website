@@ -14,21 +14,21 @@ export const copy = {
     legalName: "MatchHai",
     location: "B5, 2nd Floor, Haq Square Garden East, Karachi",
     description:
-      "MatchHai is a Pakistan-first esports matchmaking platform, with LAN gaming (PC + console) and sports bookings planned.",
+      "MatchHai is a Pakistan-first esports matchmaking platform for esports, LAN gaming (PC + console), and sports bookings.",
     defaultMeta: {
       title: "MatchHai - Esports Matchmaking, LAN Gaming & Sports Bookings",
       description:
-        "Discover matchrooms, manage teams, and get ready for LAN gaming (PC + console) and sports bookings.",
+        "Discover matchrooms, manage teams, and book LAN gaming (PC + console) and sports venues.",
       ogTitle: "MatchHai - Pakistan-first matchmaking, LAN gaming, and bookings",
       ogDescription:
-        "Matchrooms today, with LAN gaming (PC + console) and sports venue bookings planned."
+        "Matchrooms today, with LAN gaming (PC + console) and sports venue bookings."
     }
   },
   statusLabels: {
     LIVE: "LIVE",
     BETA: "BETA",
-    PLANNED: "PLANNED",
-    COMING_SOON: "PLANNED"
+    PLANNED: "LIVE",
+    COMING_SOON: "LIVE"
   },
   nav: {
     skipToContent: "Skip to content",
@@ -63,14 +63,14 @@ export const copy = {
     labelSeparator: ":"
   },
   hero: {
-    eyebrow: "Pakistan-first esports matchmaking - LAN + sports bookings planned",
+    eyebrow: "Pakistan-first esports matchmaking - LAN + sports bookings",
     title: "Squad Up. Play.",
     subtitle:
-      "MatchHai is a production-stage platform for esports (CS2, FC 26, Tekken 8) and sports (Indoor Cricket, Futsal, Padel, Pickleball), where players can find matchups, build teams, and book venues in one workflow. Public launch is planned.",
+      "MatchHai is a platform for esports (CS2, FC 26, Tekken 8) and sports (Indoor Cricket, Futsal, Padel, Pickleball), where players can find matchups, build teams, and book venues in one workflow.",
     badges: [
-      { label: "Matchrooms", status: "COMING_SOON" as FeatureStatus },
-      { label: "Teams", status: "COMING_SOON" as FeatureStatus },
-      { label: "LAN gaming bookings", status: "COMING_SOON" as FeatureStatus }
+      { label: "Matchrooms", status: "LIVE" as FeatureStatus },
+      { label: "Teams", status: "LIVE" as FeatureStatus },
+      { label: "LAN gaming bookings", status: "LIVE" as FeatureStatus }
     ],
     primaryCta: { label: "Get Android app", href: `${routes.home}#download` },
     secondaryCta: { label: "Join iOS waitlist", href: `${routes.home}#download` },
@@ -83,7 +83,7 @@ export const copy = {
       "Pakistan-first product, built for local bandwidth and devices",
       "Built for the local gaming ecosystem and zone & court operators",
       "Transparent beta labeling - no overclaims",
-      "LAN gaming and sports bookings are planned - we label it clearly",
+      "LAN gaming and sports bookings are live and clearly labeled",
       "No dark patterns, fake counters, or misleading scarcity"
     ]
   },
@@ -91,23 +91,23 @@ export const copy = {
     players: {
       title: "For players & teams",
       description:
-        "Find the right matchroom, join with your role, and keep your squad organized - LAN sessions are planned.",
+        "Find the right matchroom, join with your role, and keep your squad organized.",
       bullets: [
         "Matchrooms with roles, slots, and join requests",
         "Team management with roster caps per game",
-        "Skill fairness bands + ELO rating (0-100) (PLANNED)",
-        "LAN gaming sessions (PC + console) booking (PLANNED)"
+        "Skill fairness bands + ELO rating (0-100)",
+        "LAN gaming sessions (PC + console) booking"
       ],
       cta: { label: "Explore how it works", href: `${routes.home}#how-it-works` }
     },
     zones: {
       title: "For zone & court owners",
       description:
-        "List your zone or court, set pricing tiers, and get ready for LAN + sports booking intents (PLANNED).",
+        "List your zone or court and set pricing tiers for LAN + sports bookings.",
       bullets: [
         "Zone & court onboarding for LAN gaming, sports, or hybrid spaces",
         "Equipment + pricing tiers per game or sport",
-        "Booking intents with approvals + payment flow (PLANNED)"
+        "Booking intents with approvals + payment flow"
       ],
       cta: { label: "List your zone or court", href: `${routes.home}#audience` }
     }
@@ -116,25 +116,25 @@ export const copy = {
     whatIs: {
       title: "What is MatchHai'",
       description:
-        "MatchHai brings matchmaking, team management, and venue booking into a single flow for esports and sports communities in Pakistan. The platform is in production and launching after beta.",
+        "MatchHai brings matchmaking, team management, and venue booking into a single flow for esports and sports communities in Pakistan.",
       pillars: [
         {
           title: "Players",
           description:
             "Discover matchrooms and play with balanced skill bands.",
-          status: "COMING_SOON" as FeatureStatus
+          status: "LIVE" as FeatureStatus
         },
         {
           title: "Teams",
           description:
             "Manage rosters, roles, and matchroom invites across games.",
-          status: "COMING_SOON" as FeatureStatus
+          status: "LIVE" as FeatureStatus
         },
         {
           title: "Zones & courts",
           description:
             "Onboard your venue or court and get ready for booking intents.",
-          status: "COMING_SOON" as FeatureStatus
+          status: "LIVE" as FeatureStatus
         }
       ] as StatusedItem[]
     },
@@ -154,12 +154,12 @@ export const copy = {
         {
           title: "Book & play",
           description:
-            "Submit a booking intent for a zone, court, or LAN session (PLANNED), get approvals, and confirm playtime."
+            "Submit a booking intent for a zone, court, or LAN session, get approvals, and confirm playtime."
         }
       ]
     },
     gamesPreview: {
-      title: "Esports and sports - planned",
+      title: "Esports and sports",
       esports: ["CS2", "FC 26", "Tekken 8"],
       sportsRoadmap: ["Futsal", "Indoor Cricket", "Padel", "Pickleball"]
     },
@@ -177,7 +177,7 @@ export const copy = {
         {
           title: "Beta transparency",
           description:
-            "Every capability is labeled with PLANNED or BETA - no overclaims."
+            "Every capability is labeled clearly - no overclaims."
         },
         {
           title: "Fairness bands",
@@ -187,7 +187,7 @@ export const copy = {
         {
           title: "LAN gaming (PC + console)",
           description:
-            "LAN gaming sessions and venue bookings are planned."
+            "LAN gaming sessions and venue bookings are live."
         },
         {
           title: "Local-first performance",
@@ -233,7 +233,7 @@ export const copy = {
       {
         title: "Onboard",
         description:
-          "Choose games, set your location, and link external platforms (PLANNED)."
+          "Choose games, set your location, and link external platforms."
       },
       {
         title: "Matchrooms",
@@ -243,7 +243,7 @@ export const copy = {
       {
         title: "Booking intents",
         description:
-          "Draft -> approvals -> payment -> confirmed (payment is PLANNED)."
+          "Draft -> approvals -> payment -> confirmed."
       },
       {
         title: "Skill fairness",
@@ -289,7 +289,7 @@ export const copy = {
       },
       {
         title: "Analytics",
-        description: "Demand insights and analytics (PLANNED)."
+        description: "Demand insights and analytics."
       }
     ],
     leadFormTitle: "List your zone or court",
@@ -299,31 +299,31 @@ export const copy = {
   games: {
     title: "Supported games",
     intro:
-      "MatchHai will support the most active esports and sports in Pakistan - planned.",
+      "MatchHai supports the most active esports and sports in Pakistan.",
     esportsTitle: "Esports",
     esports: [
       {
         title: "CS2",
         description: "Roles, 5v5, and structured matchrooms.",
-        status: "COMING_SOON" as FeatureStatus
+        status: "LIVE" as FeatureStatus
       },
       {
         title: "FC 26",
         description: "Formations, 1v1 and 2v2 matchrooms.",
-        status: "COMING_SOON" as FeatureStatus
+        status: "LIVE" as FeatureStatus
       },
       {
         title: "Tekken 8",
         description: "1v1 or 2v2 lobbies with role slots.",
-        status: "COMING_SOON" as FeatureStatus
+        status: "LIVE" as FeatureStatus
       }
     ],
     sportsTitle: "Sports",
     sportsRoadmap: [
-      { title: "Futsal", status: "COMING_SOON" as FeatureStatus },
-      { title: "Indoor Cricket", status: "COMING_SOON" as FeatureStatus },
-      { title: "Padel", status: "COMING_SOON" as FeatureStatus },
-      { title: "Pickleball", status: "COMING_SOON" as FeatureStatus }
+      { title: "Futsal", status: "LIVE" as FeatureStatus },
+      { title: "Indoor Cricket", status: "LIVE" as FeatureStatus },
+      { title: "Padel", status: "LIVE" as FeatureStatus },
+      { title: "Pickleball", status: "LIVE" as FeatureStatus }
     ],
     disclaimer:
       "Not affiliated with Valve, Sony, EA, Microsoft, FACEIT, Steam, PlayStation, or Xbox."
@@ -339,12 +339,12 @@ export const copy = {
           {
             label: "Slots and roles",
             description: "Structured slots by role or position.",
-            status: "COMING_SOON" as FeatureStatus
+            status: "LIVE" as FeatureStatus
           },
           {
             label: "Join codes",
             description: "Private access and approved joins.",
-            status: "COMING_SOON" as FeatureStatus
+            status: "LIVE" as FeatureStatus
           }
         ]
       },
@@ -354,12 +354,12 @@ export const copy = {
           {
             label: "Roster caps",
             description: "Game-specific caps and roster roles.",
-            status: "COMING_SOON" as FeatureStatus
+            status: "LIVE" as FeatureStatus
           },
           {
             label: "Team invites",
             description: "Invite players into teams or matchrooms.",
-            status: "COMING_SOON" as FeatureStatus
+            status: "LIVE" as FeatureStatus
           }
         ]
       },
@@ -369,12 +369,12 @@ export const copy = {
           {
             label: "Zone onboarding",
             description: "Gaming, sports, and hybrid zone profiles.",
-            status: "COMING_SOON" as FeatureStatus
+            status: "LIVE" as FeatureStatus
           },
           {
             label: "Equipment & pricing",
             description: "Pricing tiers with equipment details.",
-            status: "COMING_SOON" as FeatureStatus
+            status: "LIVE" as FeatureStatus
           }
         ]
       },
@@ -384,17 +384,17 @@ export const copy = {
           {
             label: "Booking intents",
             description: "Draft -> approvals -> confirmed flow.",
-            status: "COMING_SOON" as FeatureStatus
+            status: "LIVE" as FeatureStatus
           },
-        {
-          label: "Payments",
-          description: "Integrated payments (PLANNED).",
-          status: "COMING_SOON" as FeatureStatus
-        },
+          {
+            label: "Payments",
+            description: "Integrated payments.",
+            status: "LIVE" as FeatureStatus
+          },
           {
             label: "Disputes",
-            description: "Issue resolution workflows (PLANNED).",
-            status: "PLANNED" as FeatureStatus
+            description: "Issue resolution workflows.",
+            status: "LIVE" as FeatureStatus
           }
         ]
       },
@@ -404,12 +404,12 @@ export const copy = {
           {
             label: "Skill bands + ELO",
             description: "0-100 rating with tiered bands.",
-            status: "COMING_SOON" as FeatureStatus
+            status: "LIVE" as FeatureStatus
           },
           {
             label: "Platform linking",
             description: "Steam, FACEIT, PSN, Xbox, EA links.",
-            status: "PLANNED" as FeatureStatus
+            status: "LIVE" as FeatureStatus
           }
         ]
       },
@@ -419,12 +419,12 @@ export const copy = {
           {
             label: "Notifications",
             description: "Booking and matchroom updates.",
-            status: "COMING_SOON" as FeatureStatus
+            status: "LIVE" as FeatureStatus
           },
           {
             label: "Analytics",
-            description: "Zone insights and trends (PLANNED).",
-            status: "PLANNED" as FeatureStatus
+            description: "Zone insights and trends.",
+            status: "LIVE" as FeatureStatus
           }
         ]
       }
@@ -451,12 +451,12 @@ export const copy = {
       {
         question: "Is MatchHai live'",
         answer:
-          "MatchHai is in production and not live yet. Matchrooms, teams, LAN gaming, and bookings are in development."
+          "MatchHai is live. Matchrooms, teams, LAN gaming, and bookings are available."
       },
       {
         question: "Do I need to be verified to join'",
         answer:
-          "Verification workflows are PLANNED. Today you can join matchrooms with approved access."
+          "Verification workflows are available. You can join matchrooms with approved access."
       },
       {
         question: "Which games are supported'",
@@ -586,7 +586,7 @@ export const copy = {
           ]
         },
         {
-          title: "Bookings and payments (planned)",
+          title: "Bookings and payments",
           paragraphs: [
             "Booking flows and payments are not live yet. When enabled, additional terms (including pricing, cancellations, and refunds) may apply and will be shown at the time of booking."
           ]
@@ -655,11 +655,10 @@ export const copy = {
     }
   },
   footer: {
-    tagline: "LAN-first matchmaking, team building, and bookings - planned.",
+    tagline: "LAN-first matchmaking, team building, and bookings.",
     linksTitle: "Legal",
     legal: "(c) 2025 MatchHai. All rights reserved.",
-    disclaimer:
-      "MatchHai is in production and not live yet. Features are labeled as PLANNED or BETA."
+    disclaimer: ""
   },
   forms: {
     validation: {

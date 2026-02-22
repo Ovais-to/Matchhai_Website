@@ -13,7 +13,9 @@ export const Footer = () => {
             {copy.site.name}
           </p>
           <p className="text-sm text-text-secondary">{copy.footer.tagline}</p>
-          <p className="text-xs text-text-muted">{copy.footer.disclaimer}</p>
+          {copy.footer.disclaimer ? (
+            <p className="text-xs text-text-muted">{copy.footer.disclaimer}</p>
+          ) : null}
         </div>
         <div className="space-y-3 text-sm text-text-secondary">
           <p className="text-sm font-semibold text-text-primary">
