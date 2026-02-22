@@ -48,10 +48,17 @@ export const Header = () => {
             ))}
           </nav>
           <div className="hidden items-center gap-3 lg:flex">
-            <Button href={copy.nav.ctas.primary.href}>
+            <Button
+              href={copy.nav.ctas.primary.href}
+              className="min-h-[36px] px-4 py-2 text-xs sm:min-h-[38px] sm:px-5 sm:text-sm"
+            >
               {copy.nav.ctas.primary.label}
             </Button>
-            <Button href={copy.nav.ctas.secondary.href} variant="secondary">
+            <Button
+              href={copy.nav.ctas.secondary.href}
+              variant="secondary"
+              className="min-h-[36px] px-4 py-2 text-xs sm:min-h-[38px] sm:px-5 sm:text-sm"
+            >
               {copy.nav.ctas.secondary.label}
             </Button>
           </div>
