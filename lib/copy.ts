@@ -16,10 +16,10 @@ export const copy = {
     description:
       "MatchHai is a Pakistan-first esports matchmaking platform, with LAN gaming (PC + console) and sports bookings coming soon.",
     defaultMeta: {
-      title: "MatchHai — Esports Matchmaking, LAN Gaming & Sports Bookings",
+      title: "MatchHai - Esports Matchmaking, LAN Gaming & Sports Bookings",
       description:
-        "Discover matchrooms, manage teams, and get ready for LAN gaming (PC + console) and sports bookings — coming soon.",
-      ogTitle: "MatchHai — Pakistan-first matchmaking, LAN gaming, and bookings",
+        "Discover matchrooms, manage teams, and get ready for LAN gaming (PC + console) and sports bookings - coming soon.",
+      ogTitle: "MatchHai - Pakistan-first matchmaking, LAN gaming, and bookings",
       ogDescription:
         "Matchrooms today, with LAN gaming (PC + console) and sports venue bookings coming soon."
     }
@@ -58,12 +58,12 @@ export const copy = {
     }
   },
   symbols: {
-    close: "×",
-    separator: "·",
+    close: "x",
+    separator: "-",
     labelSeparator: ":"
   },
   hero: {
-    eyebrow: "Pakistan-first esports matchmaking — LAN + sports bookings coming soon",
+    eyebrow: "Pakistan-first esports matchmaking - LAN + sports bookings coming soon",
     title: "Squad Up. Play.",
     subtitle:
       "MatchHai is a production-stage platform for esports (CS2, FC 26, Tekken 8) and sports (Indoor Cricket, Futsal, Padel, Pickleball), where players can find matchups, build teams, and book venues in one workflow. Public launch is coming soon.",
@@ -82,8 +82,8 @@ export const copy = {
     items: [
       "Pakistan-first product, built for local bandwidth and devices",
       "Built for the local gaming ecosystem and zone & court operators",
-      "Transparent beta labeling — no overclaims",
-      "LAN gaming and sports bookings are coming soon — we label it clearly",
+      "Transparent beta labeling - no overclaims",
+      "LAN gaming and sports bookings are coming soon - we label it clearly",
       "No dark patterns, fake counters, or misleading scarcity"
     ]
   },
@@ -91,11 +91,11 @@ export const copy = {
     players: {
       title: "For players & teams",
       description:
-        "Find the right matchroom, join with your role, and keep your squad organized — LAN sessions are coming soon.",
+        "Find the right matchroom, join with your role, and keep your squad organized - LAN sessions are coming soon.",
       bullets: [
         "Matchrooms with roles, slots, and join requests",
         "Team management with roster caps per game",
-        "Skill fairness bands + ELO rating (0–100) (COMING SOON)",
+        "Skill fairness bands + ELO rating (0-100) (COMING SOON)",
         "LAN gaming sessions (PC + console) booking (COMING SOON)"
       ],
       cta: { label: "Explore how it works", href: `${routes.home}#how-it-works` }
@@ -114,7 +114,7 @@ export const copy = {
   },
   home: {
     whatIs: {
-      title: "What is MatchHai?",
+      title: "What is MatchHai'",
       description:
         "MatchHai brings matchmaking, team management, and venue booking into a single flow for esports and sports communities in Pakistan. The platform is in production and launching soon.",
       pillars: [
@@ -159,7 +159,7 @@ export const copy = {
       ]
     },
     gamesPreview: {
-      title: "Esports and sports — coming soon",
+      title: "Esports and sports - coming soon",
       esports: ["CS2", "FC 26", "Tekken 8"],
       sportsRoadmap: ["Futsal", "Indoor Cricket", "Padel", "Pickleball"]
     },
@@ -177,7 +177,7 @@ export const copy = {
         {
           title: "Beta transparency",
           description:
-            "Every capability is labeled with COMING SOON or PLANNED — no overclaims."
+            "Every capability is labeled with COMING SOON or PLANNED - no overclaims."
         },
         {
           title: "Fairness bands",
@@ -213,7 +213,7 @@ export const copy = {
       ]
     },
     ctaStrip: {
-    title: "Ready to play or list your zone or court?",
+    title: "Ready to play or list your zone or court'",
       description:
         "Download the Android app today or join the iOS waitlist.",
       primaryCta: { label: "Download for Android", href: `${routes.home}#download` },
@@ -238,12 +238,12 @@ export const copy = {
       {
         title: "Booking intents",
         description:
-          "Draft → approvals → payment → confirmed (payment is COMING SOON)."
+          "Draft -> approvals -> payment -> confirmed (payment is COMING SOON)."
       },
       {
         title: "Skill fairness",
         description:
-          "Bands + ELO ratings (0–100) to help balance teams."
+          "Bands + ELO ratings (0-100) to help balance teams."
       }
     ],
     cta: { label: "Get the app", href: `${routes.home}#download` }
@@ -294,7 +294,7 @@ export const copy = {
   games: {
     title: "Supported games",
     intro:
-      "MatchHai will support the most active esports and sports in Pakistan — coming soon.",
+      "MatchHai will support the most active esports and sports in Pakistan - coming soon.",
     esportsTitle: "Esports",
     esports: [
       {
@@ -326,7 +326,7 @@ export const copy = {
   features: {
     title: "Core platform features",
     intro:
-      "MatchHai’s modules connect players, teams, and zones & courts without overpromising.",
+      "MatchHai's modules connect players, teams, and zones & courts without overpromising.",
     sections: [
       {
         title: "Matchrooms",
@@ -378,7 +378,7 @@ export const copy = {
         items: [
           {
             label: "Booking intents",
-            description: "Draft → approvals → confirmed flow.",
+            description: "Draft -> approvals -> confirmed flow.",
             status: "COMING_SOON" as FeatureStatus
           },
           {
@@ -398,7 +398,7 @@ export const copy = {
         items: [
           {
             label: "Skill bands + ELO",
-            description: "0–100 rating with tiered bands.",
+            description: "0-100 rating with tiered bands.",
             status: "COMING_SOON" as FeatureStatus
           },
           {
@@ -439,27 +439,27 @@ export const copy = {
     title: "Frequently asked questions",
     intro: "Clear answers for players, teams, and zone & court owners.",
     toggleLabels: {
-      open: "−",
+      open: "-",
       closed: "+"
     },
     items: [
       {
-        question: "Is MatchHai live?",
+        question: "Is MatchHai live'",
         answer:
           "MatchHai is in production and not live yet. Matchrooms, teams, LAN gaming, and bookings are coming soon."
       },
       {
-        question: "Do I need to be verified to join?",
+        question: "Do I need to be verified to join'",
         answer:
           "Verification workflows are PLANNED. Today you can join matchrooms with approved access."
       },
       {
-        question: "Which games are supported?",
+        question: "Which games are supported'",
         answer:
           "CS2, FC 26, and Tekken 8 are supported. Physical sports are on the roadmap."
       },
       {
-        question: "Can zone or court owners list their venue?",
+        question: "Can zone or court owners list their venue'",
         answer:
           "Yes. Submit a zone interest form and our team will reach out for onboarding."
       }
@@ -468,12 +468,12 @@ export const copy = {
   contact: {
     title: "Contact MatchHai",
     intro:
-      "For partnerships, onboarding, and support, contact us through the form below. We respond within 1–2 business days.",
+      "For partnerships, onboarding, and support, contact us through the form below. We respond within 1-2 business days.",
     detailsTitle: "Contact details",
     details: [
       { label: "Email", value: "matchhaiofficial@gmail.com" },
       { label: "Phone", value: "+92 323 8249779" },
-      { label: "Response time", value: "1–2 business days" },
+      { label: "Response time", value: "1-2 business days" },
       { label: "Business address", value: "B5, 2nd Floor, Haq Square Garden East, Karachi" }
     ]
   },
@@ -535,7 +535,7 @@ export const copy = {
         {
           title: "Changes to this policy",
           paragraphs: [
-            "We may update this policy from time to time. The “Last updated” date indicates when changes were made."
+            "We may update this policy from time to time. The 'Last updated' date indicates when changes were made."
           ]
         },
         {
@@ -595,7 +595,7 @@ export const copy = {
         {
           title: "Disclaimers",
           paragraphs: [
-            "MatchHai is provided on an “as is” and “as available” basis. We do not guarantee uninterrupted service, and we do not guarantee outcomes such as match availability, venue availability, or suitability."
+            "MatchHai is provided on an 'as is' and 'as available' basis. We do not guarantee uninterrupted service, and we do not guarantee outcomes such as match availability, venue availability, or suitability."
           ]
         },
         {
@@ -650,9 +650,9 @@ export const copy = {
     }
   },
   footer: {
-    tagline: "LAN-first matchmaking, team building, and bookings — coming soon.",
+    tagline: "LAN-first matchmaking, team building, and bookings - coming soon.",
     linksTitle: "Legal",
-    legal: "© 2025 MatchHai. All rights reserved.",
+    legal: "(c) 2025 MatchHai. All rights reserved.",
     disclaimer:
       "MatchHai is in production and not live yet. Features are labeled as COMING SOON or PLANNED."
   },
@@ -715,7 +715,7 @@ export const copy = {
       fields: {
         name: { label: "Full name", placeholder: "Your name" },
         email: { label: "Email", placeholder: "you@example.com" },
-        message: { label: "Message", placeholder: "How can we help?" }
+        message: { label: "Message", placeholder: "How can we help'" }
       },
       honeypot: {
         label: "Leave this field empty",
@@ -724,7 +724,7 @@ export const copy = {
       submit: "Send message",
       success: {
         title: "Message received",
-        message: "We will reply within 1–2 business days."
+        message: "We will reply within 1-2 business days."
       },
       error: {
         title: "Message not sent",

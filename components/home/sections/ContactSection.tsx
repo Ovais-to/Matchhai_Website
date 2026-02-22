@@ -14,14 +14,15 @@ export const ContactSection = () => {
       <div className="container">
         <div className="grid gap-8 md:grid-cols-[1fr_1.15fr] md:items-start">
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-text-primary sm:text-3xl" data-reveal>
+            <h2 className="section-title" data-reveal>
               {copy.contact.title}
             </h2>
-            <p className="text-sm text-text-secondary sm:text-base" data-reveal>
+            <p className="section-lede" data-reveal>
               {copy.contact.intro}
             </p>
             <div
-              className="rounded-[20px] border border-white/10 bg-bg-secondary/40 p-5 backdrop-blur-md sm:rounded-[22px] sm:p-6"
+              className="group surface-card p-5 sm:p-6"
+              data-card
               data-reveal
             >
               <p className="text-sm font-semibold text-text-primary">
@@ -42,7 +43,8 @@ export const ContactSection = () => {
           </div>
 
           <div
-            className="rounded-[22px] border border-white/10 bg-bg-secondary/40 p-5 shadow-[0_0_32px_rgba(0,0,0,0.22)] backdrop-blur-md sm:rounded-[26px] sm:p-7"
+            className="group surface-card p-5 shadow-[0_0_32px_rgba(0,0,0,0.22)] sm:p-7"
+            data-card
             data-reveal
           >
             <ContactForm />

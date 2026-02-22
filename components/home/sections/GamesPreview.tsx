@@ -12,18 +12,19 @@ export const GamesPreview = () => {
   return (
     <section id="games" className="section" ref={ref}>
       <div className="container">
-        <h2 className="text-2xl font-semibold text-text-primary sm:text-3xl" data-reveal>
+        <h2 className="section-title" data-reveal>
           {copy.home.gamesPreview.title}
         </h2>
         <div className="mt-6 grid gap-5 md:mt-8 md:grid-cols-2">
           <div
-            className="group relative overflow-hidden rounded-[22px] border border-white/10 bg-bg-secondary/40 p-5 backdrop-blur-md transition duration-300 hover:-translate-y-1 sm:rounded-[26px] sm:p-7"
+            className="group surface-card"
+            data-card
             data-reveal
           >
             <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
               <div className="absolute -left-24 -top-24 h-40 w-40 rounded-full bg-brand-primary/10 blur-[90px]" />
             </div>
-            <p className="text-sm uppercase tracking-[0.2em] text-text-muted">
+            <p className="section-kicker text-sm">
               {copy.games.esportsTitle}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
@@ -38,13 +39,14 @@ export const GamesPreview = () => {
             </div>
           </div>
           <div
-            className="group relative overflow-hidden rounded-[22px] border border-white/10 bg-bg-secondary/40 p-5 backdrop-blur-md transition duration-300 hover:-translate-y-1 sm:rounded-[26px] sm:p-7"
+            className="group surface-card"
+            data-card
             data-reveal
           >
             <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
               <div className="absolute -right-24 -bottom-24 h-40 w-40 rounded-full bg-brand-secondary/10 blur-[90px]" />
             </div>
-            <p className="text-sm uppercase tracking-[0.2em] text-text-muted">
+            <p className="section-kicker text-sm">
               {copy.games.sportsTitle}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">

@@ -22,6 +22,12 @@ const schema = z.object({
 type FormValues = z.infer<typeof schema>;
 
 export const WaitlistForm = () => {
+  const fieldIds = {
+    name: "waitlist-name",
+    email: "waitlist-email",
+    city: "waitlist-city",
+    website: "waitlist-website"
+  };
   const [toast, setToast] = useState<{
     title: string;
     message: string;
@@ -61,54 +67,52 @@ export const WaitlistForm = () => {
     <div className="space-y-4">
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div>
-          <label className="text-sm text-text-secondary">
+          <label htmlFor={fieldIds.name} className="label">
             {copy.forms.waitlist.fields.name.label}
           </label>
           <input
             {...register("name")}
+            id={fieldIds.name}
             placeholder={copy.forms.waitlist.fields.name.placeholder}
-            className="focus-ring mt-2 w-full rounded-xl border border-bg-tertiary bg-bg-primary px-4 py-3 text-sm text-text-primary"
+            className="input"
           />
           {errors.name ? (
-            <p className="mt-1 text-xs text-status-error">
-              {errors.name.message}
-            </p>
+            <p className="error-text">{errors.name.message}</p>
           ) : null}
         </div>
         <div>
-          <label className="text-sm text-text-secondary">
+          <label htmlFor={fieldIds.email} className="label">
             {copy.forms.waitlist.fields.email.label}
           </label>
           <input
             {...register("email")}
+            id={fieldIds.email}
             placeholder={copy.forms.waitlist.fields.email.placeholder}
-            className="focus-ring mt-2 w-full rounded-xl border border-bg-tertiary bg-bg-primary px-4 py-3 text-sm text-text-primary"
+            className="input"
           />
           {errors.email ? (
-            <p className="mt-1 text-xs text-status-error">
-              {errors.email.message}
-            </p>
+            <p className="error-text">{errors.email.message}</p>
           ) : null}
         </div>
         <div>
-          <label className="text-sm text-text-secondary">
+          <label htmlFor={fieldIds.city} className="label">
             {copy.forms.waitlist.fields.city.label}
           </label>
           <input
             {...register("city")}
+            id={fieldIds.city}
             placeholder={copy.forms.waitlist.fields.city.placeholder}
-            className="focus-ring mt-2 w-full rounded-xl border border-bg-tertiary bg-bg-primary px-4 py-3 text-sm text-text-primary"
+            className="input"
           />
           {errors.city ? (
-            <p className="mt-1 text-xs text-status-error">
-              {errors.city.message}
-            </p>
+            <p className="error-text">{errors.city.message}</p>
           ) : null}
         </div>
         <div className="hidden">
-          <label>{copy.forms.waitlist.honeypot.label}</label>
+          <label htmlFor={fieldIds.website}>{copy.forms.waitlist.honeypot.label}</label>
           <input
             {...register("website")}
+            id={fieldIds.website}
             placeholder={copy.forms.waitlist.honeypot.placeholder}
           />
         </div>

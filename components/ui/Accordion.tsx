@@ -26,7 +26,7 @@ export const Accordion = ({ items, toggleLabels }: AccordionProps) => {
         return (
           <div
             key={item.id}
-            className="rounded-2xl border border-bg-tertiary bg-bg-secondary"
+            className="rounded-2xl border border-border bg-bg-secondary"
           >
             <button
               type="button"

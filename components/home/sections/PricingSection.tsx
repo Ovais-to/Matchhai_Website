@@ -12,10 +12,10 @@ export const PricingSection = () => {
     <section id="pricing" className="section" ref={ref}>
       <div className="container">
         <div className="max-w-3xl space-y-3">
-          <h2 className="text-2xl font-semibold text-text-primary sm:text-3xl" data-reveal>
+          <h2 className="section-title" data-reveal>
             {copy.home.pricing.title}
           </h2>
-          <p className="text-sm text-text-secondary sm:text-base" data-reveal>
+          <p className="section-lede" data-reveal>
             {copy.home.pricing.intro}
           </p>
         </div>
@@ -24,7 +24,8 @@ export const PricingSection = () => {
           {copy.home.pricing.plans.map((plan) => (
             <article
               key={plan.name}
-              className="group relative overflow-hidden rounded-[22px] border border-white/10 bg-bg-secondary/40 p-5 backdrop-blur-md transition duration-300 hover:-translate-y-1 sm:rounded-[26px] sm:p-7"
+              className="group surface-card"
+              data-card
               data-reveal
             >
               <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">

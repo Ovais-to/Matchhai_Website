@@ -16,7 +16,12 @@ export const Toast = ({ title, message, variant = "success", onClose }: ToastPro
       : "border-status-error text-status-error";
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 w-full max-w-sm rounded-2xl border border-bg-tertiary bg-bg-secondary p-4 shadow-lg">
+    <div
+      className="fixed bottom-4 left-4 right-4 z-50 w-full max-w-sm rounded-2xl border border-border bg-bg-secondary p-4 shadow-lg sm:bottom-6 sm:left-auto sm:right-6"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    >
       <div className="flex items-start justify-between">
         <div>
           <p className={`text-sm font-semibold ${color}`}>{title}</p>

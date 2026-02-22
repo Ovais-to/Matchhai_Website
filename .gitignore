@@ -1,5 +1,8 @@
 node_modules
 .next
 out
+.firebase
+.agents
+skills-lock.json
 .env*
 *.log

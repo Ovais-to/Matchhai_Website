@@ -20,7 +20,7 @@ export const Header = () => {
     <>
       <header
         ref={navRef}
-        className="sticky top-0 z-30 border-b border-bg-tertiary bg-bg-primary/90 backdrop-blur"
+        className="sticky top-0 z-30 border-b border-border bg-bg-primary backdrop-blur"
       >
         <div className="container flex h-16 items-center justify-between">
           <Link href={routes.home} className="flex items-center gap-2 sm:gap-3">
@@ -58,7 +58,7 @@ export const Header = () => {
           <button
             type="button"
             aria-label={copy.nav.mobile.openLabel}
-            className="focus-ring rounded-full border border-bg-tertiary px-3 py-2 text-sm text-text-secondary lg:hidden"
+            className="focus-ring rounded-full border border-border px-3 py-2 text-sm text-text-secondary lg:hidden"
             onClick={() => setOpen(true)}
           >
             {copy.nav.mobile.openText}

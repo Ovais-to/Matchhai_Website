@@ -14,10 +14,10 @@ export const WhatIs = () => {
     <section id="what-is" className="section" ref={ref}>
       <div className="container">
         <div className="max-w-2xl">
-          <h2 className="text-2xl font-semibold text-text-primary sm:text-3xl" data-reveal>
+          <h2 className="section-title" data-reveal>
             {copy.home.whatIs.title}
           </h2>
-          <p className="mt-3 text-sm text-text-secondary sm:text-base" data-reveal>
+          <p className="section-lede" data-reveal>
             {copy.home.whatIs.description}
           </p>
         </div>

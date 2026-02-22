@@ -16,7 +16,7 @@ export const Card = ({ children, className, ...props }: CardProps) => {
   return (
     <div
       ref={ref}
-      className={`group relative overflow-hidden rounded-3xl border border-white/10 bg-bg-secondary/60 p-8 shadow-[0_0_32px_rgba(0,0,0,0.28)] backdrop-blur-md transition will-change-transform transform-gpu hover:-translate-y-1 ${className ?? ""}`}
+      className={`group surface-card shadow-[0_0_32px_rgba(0,0,0,0.28)] ${className ?? ""}`}
       data-card
       {...props}
     >

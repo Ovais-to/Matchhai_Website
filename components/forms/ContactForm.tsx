@@ -22,6 +22,12 @@ const schema = z.object({
 type FormValues = z.infer<typeof schema>;
 
 export const ContactForm = () => {
+  const fieldIds = {
+    name: "contact-name",
+    email: "contact-email",
+    message: "contact-message",
+    website: "contact-website"
+  };
   const [toast, setToast] = useState<{
     title: string;
     message: string;
@@ -69,55 +75,53 @@ export const ContactForm = () => {
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div>
-          <label className="text-sm text-text-secondary">
+          <label htmlFor={fieldIds.name} className="label">
             {copy.forms.contact.fields.name.label}
           </label>
           <input
             {...register("name")}
+            id={fieldIds.name}
             placeholder={copy.forms.contact.fields.name.placeholder}
-            className="focus-ring mt-2 w-full rounded-xl border border-bg-tertiary bg-bg-primary px-4 py-3 text-sm text-text-primary"
+            className="input"
           />
           {errors.name ? (
-            <p className="mt-1 text-xs text-status-error">
-              {errors.name.message}
-            </p>
+            <p className="error-text">{errors.name.message}</p>
           ) : null}
         </div>
         <div>
-          <label className="text-sm text-text-secondary">
+          <label htmlFor={fieldIds.email} className="label">
             {copy.forms.contact.fields.email.label}
           </label>
           <input
             {...register("email")}
+            id={fieldIds.email}
             placeholder={copy.forms.contact.fields.email.placeholder}
-            className="focus-ring mt-2 w-full rounded-xl border border-bg-tertiary bg-bg-primary px-4 py-3 text-sm text-text-primary"
+            className="input"
           />
           {errors.email ? (
-            <p className="mt-1 text-xs text-status-error">
-              {errors.email.message}
-            </p>
+            <p className="error-text">{errors.email.message}</p>
           ) : null}
         </div>
         <div>
-          <label className="text-sm text-text-secondary">
+          <label htmlFor={fieldIds.message} className="label">
             {copy.forms.contact.fields.message.label}
           </label>
           <textarea
             {...register("message")}
+            id={fieldIds.message}
             placeholder={copy.forms.contact.fields.message.placeholder}
-            className="focus-ring mt-2 w-full rounded-xl border border-bg-tertiary bg-bg-primary px-4 py-3 text-sm text-text-primary"
+            className="input"
             rows={4}
           />
           {errors.message ? (
-            <p className="mt-1 text-xs text-status-error">
-              {errors.message.message}
-            </p>
+            <p className="error-text">{errors.message.message}</p>
           ) : null}
         </div>
         <div className="hidden">
-          <label>{copy.forms.contact.honeypot.label}</label>
+          <label htmlFor={fieldIds.website}>{copy.forms.contact.honeypot.label}</label>
           <input
             {...register("website")}
+            id={fieldIds.website}
             placeholder={copy.forms.contact.honeypot.placeholder}
           />
         </div>

@@ -18,7 +18,7 @@ export const Badge = ({ status, label, className }: BadgeProps) => {
 
   return (
     <span
-      className={`inline-flex items-center gap-2 rounded-full border border-white/15 bg-bg-secondary/60 px-3 py-1 text-[11px] font-semibold tracking-[0.12em] text-text-secondary backdrop-blur-sm normal-case ${className ?? ""}`}
+      className={`inline-flex items-center gap-2 rounded-full border border-border bg-bg-secondary px-3 py-1 text-[11px] font-semibold tracking-[0.12em] text-text-secondary backdrop-blur-sm normal-case ${className ?? ""}`}
     >
       <span className={`h-1.5 w-1.5 rounded-full ${dot}`} />
       {label}

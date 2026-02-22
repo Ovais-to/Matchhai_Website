@@ -25,6 +25,15 @@ const schema = z.object({
 type FormValues = z.infer<typeof schema>;
 
 export const ZoneInterestForm = () => {
+  const fieldIds = {
+    zoneName: "zone-name",
+    city: "zone-city",
+    contactName: "zone-contact-name",
+    phone: "zone-phone",
+    email: "zone-email",
+    games: "zone-games",
+    website: "zone-website"
+  };
   const [toast, setToast] = useState<{
     title: string;
     message: string;
@@ -65,104 +74,99 @@ export const ZoneInterestForm = () => {
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div className="grid gap-4 md:grid-cols-2">
           <div>
-            <label className="text-sm text-text-secondary">
+            <label htmlFor={fieldIds.zoneName} className="label">
               {copy.forms.zoneInterest.fields.zoneName.label}
             </label>
             <input
               {...register("zoneName")}
+              id={fieldIds.zoneName}
               placeholder={copy.forms.zoneInterest.fields.zoneName.placeholder}
-              className="focus-ring mt-2 w-full rounded-xl border border-bg-tertiary bg-bg-primary px-4 py-3 text-sm text-text-primary"
+              className="input"
             />
             {errors.zoneName ? (
-              <p className="mt-1 text-xs text-status-error">
-                {errors.zoneName.message}
-              </p>
+              <p className="error-text">{errors.zoneName.message}</p>
             ) : null}
           </div>
           <div>
-            <label className="text-sm text-text-secondary">
+            <label htmlFor={fieldIds.city} className="label">
               {copy.forms.zoneInterest.fields.city.label}
             </label>
             <input
               {...register("city")}
+              id={fieldIds.city}
               placeholder={copy.forms.zoneInterest.fields.city.placeholder}
-              className="focus-ring mt-2 w-full rounded-xl border border-bg-tertiary bg-bg-primary px-4 py-3 text-sm text-text-primary"
+              className="input"
             />
             {errors.city ? (
-              <p className="mt-1 text-xs text-status-error">
-                {errors.city.message}
-              </p>
+              <p className="error-text">{errors.city.message}</p>
             ) : null}
           </div>
         </div>
         <div className="grid gap-4 md:grid-cols-2">
           <div>
-            <label className="text-sm text-text-secondary">
+            <label htmlFor={fieldIds.contactName} className="label">
               {copy.forms.zoneInterest.fields.contactName.label}
             </label>
             <input
               {...register("contactName")}
+              id={fieldIds.contactName}
               placeholder={copy.forms.zoneInterest.fields.contactName.placeholder}
-              className="focus-ring mt-2 w-full rounded-xl border border-bg-tertiary bg-bg-primary px-4 py-3 text-sm text-text-primary"
+              className="input"
             />
             {errors.contactName ? (
-              <p className="mt-1 text-xs text-status-error">
-                {errors.contactName.message}
-              </p>
+              <p className="error-text">{errors.contactName.message}</p>
             ) : null}
           </div>
           <div>
-            <label className="text-sm text-text-secondary">
+            <label htmlFor={fieldIds.phone} className="label">
               {copy.forms.zoneInterest.fields.phone.label}
             </label>
             <input
               {...register("phone")}
+              id={fieldIds.phone}
               placeholder={copy.forms.zoneInterest.fields.phone.placeholder}
-              className="focus-ring mt-2 w-full rounded-xl border border-bg-tertiary bg-bg-primary px-4 py-3 text-sm text-text-primary"
+              className="input"
             />
             {errors.phone ? (
-              <p className="mt-1 text-xs text-status-error">
-                {errors.phone.message}
-              </p>
+              <p className="error-text">{errors.phone.message}</p>
             ) : null}
           </div>
         </div>
         <div className="grid gap-4 md:grid-cols-2">
           <div>
-            <label className="text-sm text-text-secondary">
+            <label htmlFor={fieldIds.email} className="label">
               {copy.forms.zoneInterest.fields.email.label}
             </label>
             <input
               {...register("email")}
+              id={fieldIds.email}
               placeholder={copy.forms.zoneInterest.fields.email.placeholder}
-              className="focus-ring mt-2 w-full rounded-xl border border-bg-tertiary bg-bg-primary px-4 py-3 text-sm text-text-primary"
+              className="input"
             />
             {errors.email ? (
-              <p className="mt-1 text-xs text-status-error">
-                {errors.email.message}
-              </p>
+              <p className="error-text">{errors.email.message}</p>
             ) : null}
           </div>
           <div>
-            <label className="text-sm text-text-secondary">
+            <label htmlFor={fieldIds.games} className="label">
               {copy.forms.zoneInterest.fields.games.label}
             </label>
             <input
               {...register("games")}
+              id={fieldIds.games}
               placeholder={copy.forms.zoneInterest.fields.games.placeholder}
-              className="focus-ring mt-2 w-full rounded-xl border border-bg-tertiary bg-bg-primary px-4 py-3 text-sm text-text-primary"
+              className="input"
             />
             {errors.games ? (
-              <p className="mt-1 text-xs text-status-error">
-                {errors.games.message}
-              </p>
+              <p className="error-text">{errors.games.message}</p>
             ) : null}
           </div>
         </div>
         <div className="hidden">
-          <label>{copy.forms.zoneInterest.honeypot.label}</label>
+          <label htmlFor={fieldIds.website}>{copy.forms.zoneInterest.honeypot.label}</label>
           <input
             {...register("website")}
+            id={fieldIds.website}
             placeholder={copy.forms.zoneInterest.honeypot.placeholder}
           />
         </div>

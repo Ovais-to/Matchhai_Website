@@ -14,11 +14,11 @@ export default function PrivacyPage() {
       <NeonBackdrop />
       <div className="container">
         <Reveal className="space-y-10">
-          <h1 className="text-3xl font-semibold text-text-primary" data-reveal>
+          <h1 className="page-title" data-reveal>
             {copy.legal.privacy.title}
           </h1>
           <div className="space-y-3" data-reveal>
-            <p className="text-text-secondary">{copy.legal.privacy.intro}</p>
+            <p className="section-lede">{copy.legal.privacy.intro}</p>
             <p className="text-sm text-text-muted">
               Last updated: {copy.legal.privacy.lastUpdated}
             </p>

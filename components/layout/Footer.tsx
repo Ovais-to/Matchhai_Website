@@ -6,7 +6,7 @@ import { routes } from "@/lib/routes";
 
 export const Footer = () => {
   return (
-    <footer className="overflow-hidden border-t border-bg-tertiary bg-bg-secondary">
+    <footer className="overflow-hidden border-t border-border bg-bg-secondary">
       <div className="container grid gap-10 py-12 md:grid-cols-3">
         <div className="space-y-3">
           <p className="text-lg font-semibold text-text-primary">
@@ -44,7 +44,7 @@ export const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="border-t border-bg-tertiary">
+      <div className="border-t border-border">
         <div className="container flex flex-col gap-2 py-4 text-xs text-text-muted md:flex-row md:items-center md:justify-between">
           <span>{copy.footer.legal}</span>
           <span>

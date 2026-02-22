@@ -13,14 +13,15 @@ export const AudienceSplit = () => {
     <section id="audience" className="section" ref={ref}>
       <div className="container grid gap-5 md:gap-6 md:grid-cols-2">
         <div
-          className="group relative space-y-4 overflow-hidden rounded-[24px] border border-white/10 bg-bg-secondary/40 p-5 shadow-[0_0_32px_rgba(0,0,0,0.28)] backdrop-blur-md transition duration-300 hover:-translate-y-1 sm:rounded-[28px] sm:p-7"
+          className="group surface-card space-y-4 shadow-[0_0_32px_rgba(0,0,0,0.28)]"
+          data-card
           data-reveal
         >
           <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
             <div className="absolute -top-24 left-0 h-48 w-48 rounded-full bg-brand-primary/12 blur-[80px]" />
             <div className="absolute -bottom-24 right-0 h-48 w-48 rounded-full bg-brand-secondary/12 blur-[80px]" />
           </div>
-          <p className="text-xs uppercase tracking-[0.2em] text-text-muted">
+          <p className="section-kicker">
             {copy.audience.players.title}
           </p>
           <h2 className="text-xl font-semibold text-text-primary sm:text-2xl">
@@ -38,14 +39,15 @@ export const AudienceSplit = () => {
           </div>
         </div>
         <div
-          className="group relative space-y-4 overflow-hidden rounded-[24px] border border-white/10 bg-bg-secondary/40 p-5 shadow-[0_0_32px_rgba(0,0,0,0.28)] backdrop-blur-md transition duration-300 hover:-translate-y-1 sm:rounded-[28px] sm:p-7"
+          className="group surface-card space-y-4 shadow-[0_0_32px_rgba(0,0,0,0.28)]"
+          data-card
           data-reveal
         >
           <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
             <div className="absolute -top-24 right-0 h-48 w-48 rounded-full bg-brand-secondary/12 blur-[80px]" />
             <div className="absolute -bottom-24 left-0 h-48 w-48 rounded-full bg-brand-primary/12 blur-[80px]" />
           </div>
-          <p className="text-xs uppercase tracking-[0.2em] text-text-muted">
+          <p className="section-kicker">
             {copy.audience.zones.title}
           </p>
           <h2 className="text-xl font-semibold text-text-primary sm:text-2xl">

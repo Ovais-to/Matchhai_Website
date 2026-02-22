@@ -19,6 +19,8 @@ const config: Config = {
           success: "var(--color-success)",
           error: "var(--color-error)"
         },
+        border: "var(--color-border)",
+        ring: "var(--color-ring)",
         text: {
           primary: "var(--color-text-primary)",
           secondary: "var(--color-text-secondary)",

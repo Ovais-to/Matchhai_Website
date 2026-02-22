@@ -5,17 +5,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --color-bg-primary: #0f1115;
-  --color-bg-secondary: #151821;
-  --color-bg-tertiary: #1f2430;
-  --color-primary: #6bb7ff;
-  --color-primary-hover: #86c7ff;
-  --color-secondary: #d6b26f;
+  --color-bg-primary: #0b0e13;
+  --color-bg-secondary: #131723;
+  --color-bg-tertiary: #1b2232;
+  --color-primary: #6cc0ff;
+  --color-primary-hover: #8fd0ff;
+  --color-secondary: #d9b26c;
   --color-success: #22c55e;
   --color-error: #ef4444;
-  --color-text-primary: #f4f6f9;
-  --color-text-secondary: #d2d8e2;
-  --color-text-muted: #a3adbe;
+  --color-text-primary: #f3f6fb;
+  --color-text-secondary: #c9d3e3;
+  --color-text-muted: #9aa6bb;
+  --color-border: #222a3b;
+  --color-ring: #6cc0ff;
   --font-heading: "Montserrat", "Segoe UI", sans-serif;
   --font-body: "Raleway", "Segoe UI", sans-serif;
 }
@@ -33,6 +35,7 @@ html {
 body {
   @apply bg-bg-primary text-text-primary antialiased;
   font-family: var(--font-body);
+  line-height: 1.6;
   min-height: 100%;
   overflow-x: hidden;
 }
@@ -76,7 +79,7 @@ a {
 }
 
 .focus-ring {
-  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary;
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-bg-primary;
 }
 
 .section {
@@ -85,6 +88,44 @@ a {
 
 .container {
   @apply mx-auto w-full max-w-6xl px-4 md:px-6;
+}
+
+@layer components {
+  .section-title {
+    @apply text-2xl font-semibold text-text-primary sm:text-3xl md:text-[34px];
+  }
+
+  .section-lede {
+    @apply mt-3 text-sm text-text-secondary sm:text-base md:text-lg;
+  }
+
+  .section-kicker {
+    @apply text-xs uppercase tracking-[0.2em] text-text-muted;
+  }
+
+  .page-title {
+    @apply text-3xl font-semibold text-text-primary sm:text-4xl;
+  }
+
+  .surface-card {
+    @apply relative overflow-hidden rounded-[22px] border border-border bg-bg-secondary p-5 backdrop-blur-md transition duration-300 hover:-translate-y-1 sm:rounded-[26px] sm:p-7;
+  }
+
+  .surface-panel {
+    @apply rounded-2xl border border-border bg-bg-secondary px-5 py-8 text-center sm:rounded-3xl sm:px-6 sm:py-10 md:px-12;
+  }
+
+  .label {
+    @apply text-sm text-text-secondary;
+  }
+
+  .input {
+    @apply focus-ring mt-2 w-full rounded-xl border border-border bg-bg-primary px-4 py-3 text-sm text-text-primary placeholder:text-text-muted;
+  }
+
+  .error-text {
+    @apply mt-1 text-xs text-status-error;
+  }
 }
 
 .page-background {
