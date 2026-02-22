@@ -24,7 +24,7 @@ export default function TermsPage() {
             </p>
           </div>
 
-          <div className="space-y-8">
+          <div className="reading space-y-8">
             {copy.legal.terms.sections.map((section) => (
               <section key={section.title} className="space-y-3" data-reveal>
                 <h2 className="text-xl font-semibold text-text-primary">

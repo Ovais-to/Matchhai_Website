@@ -4,6 +4,10 @@ const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./lib/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ["var(--font-heading)"],
+        body: ["var(--font-body)"]
+      },
       colors: {
         bg: {
           primary: "rgb(var(--color-bg-primary) / <alpha-value>)",

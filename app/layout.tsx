@@ -6,6 +6,7 @@ import { ErrorBoundary } from "@/components/layout/ErrorBoundary";
 import { AnalyticsClient } from "@/components/layout/AnalyticsClient";
 import { copy } from "@/lib/copy";
 import { assets } from "@/lib/assets";
+import { fontBody, fontHeading } from "@/app/fonts";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://matchhai.com"),
@@ -27,7 +28,7 @@ export default function RootLayout({
   const showBanner = env && env !== "production";
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${fontHeading.variable} ${fontBody.variable}`}>
       <body>
         <div className="page-background" aria-hidden="true" />
         <div className="page-content">
