@@ -35,6 +35,9 @@ export const Footer = () => {
           <p className="text-sm font-semibold text-text-primary">
             {copy.footer.linksTitle}
           </p>
+          <Link href={routes.howItWorks} className="block hover:text-text-primary">
+            How it works
+          </Link>
           <Link href={routes.privacy} className="block hover:text-text-primary">
             {copy.legal.privacy.title}
           </Link>

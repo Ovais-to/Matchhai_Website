@@ -12,7 +12,7 @@ export const copy = {
   site: {
     name: "MatchHai",
     legalName: "MatchHai",
-    location: "B5, 2nd Floor, Haq Square Garden East, Karachi",
+    location: "Garden East, Karachi",
     description:
       "MatchHai is a Pakistan-first esports matchmaking platform for esports, LAN gaming (PC + console), and sports bookings.",
     defaultMeta: {
@@ -34,7 +34,7 @@ export const copy = {
     skipToContent: "Skip to content",
     links: [
       { label: "Home", href: routes.home },
-      { label: "How it works", href: `${routes.home}#how-it-works` },
+      { label: "How it works", href: routes.howItWorks },
       { label: "Games", href: `${routes.home}#games` },
       { label: "Zones", href: `${routes.home}#audience` },
       { label: "Trust", href: `${routes.home}#trust` },
@@ -114,7 +114,7 @@ export const copy = {
   },
   home: {
     whatIs: {
-      title: "What is MatchHai'",
+      title: "What is MatchHai",
       description:
         "MatchHai brings matchmaking, team management, and venue booking into a single flow for esports and sports communities in Pakistan.",
       pillars: [
@@ -218,7 +218,7 @@ export const copy = {
       ]
     },
     ctaStrip: {
-    title: "Ready to play or list your zone or court'",
+    title: "Ready to play or list your zone or court",
       description:
         "Download the Android app today or join the iOS waitlist.",
       primaryCta: { label: "Download for Android", href: `${routes.home}#download` },
@@ -233,27 +233,31 @@ export const copy = {
       {
         title: "Onboard",
         description:
-          "Choose games, set your location, and link external platforms."
+          "Choose games, set your location, and link external platforms.",
+        status: "LIVE" as FeatureStatus
       },
       {
         title: "Matchrooms",
         description:
-          "Structured slots, roles, join requests, and private codes."
+          "Structured slots, roles, join requests, and private codes.",
+        status: "LIVE" as FeatureStatus
       },
       {
         title: "Booking intents",
         description:
-          "Draft -> approvals -> payment -> confirmed."
+          "Draft -> approvals -> payment -> confirmed.",
+        status: "LIVE" as FeatureStatus
       },
       {
         title: "Skill fairness",
         description:
-          "Bands + ELO ratings (0-100) to help balance teams."
+          "Bands + ELO ratings (0-100) to help balance teams.",
+        status: "LIVE" as FeatureStatus
       }
     ],
     cta: { label: "Get the app", href: `${routes.home}#download` }
   },
-    zones: {
+  zones: {
     title: "Zones & courts for gaming and sports",
     intro:
       "Bring visibility to your venue or court, fill slots faster, and manage pricing tiers.",
@@ -449,39 +453,39 @@ export const copy = {
     },
     items: [
       {
-        question: "Is MatchHai live'",
+        question: "Is MatchHai live",
         answer:
           "MatchHai is live. Matchrooms, teams, LAN gaming, and bookings are available."
       },
       {
-        question: "Do I need to be verified to join'",
+        question: "Do I need to be verified to join",
         answer:
           "Verification workflows are available. You can join matchrooms with approved access."
       },
       {
-        question: "Which games are supported'",
+        question: "Which games are supported",
         answer:
           "CS2, FC 26, and Tekken 8 are supported. Physical sports are on the roadmap."
       },
       {
-        question: "Can zone or court owners list their venue'",
+        question: "Can zone or court owners list their venue",
         answer:
           "Yes. Submit a zone interest form and our team will reach out for onboarding."
       }
     ]
   },
-  contact: {
-    title: "Contact MatchHai",
-    intro:
-      "For partnerships, onboarding, and support, contact us through the form below. We respond within 1-2 business days.",
-    detailsTitle: "Contact details",
-    details: [
-      { label: "Email", value: "matchhaiofficial@gmail.com" },
-      { label: "Phone", value: "+92 323 8249779" },
-      { label: "Response time", value: "1-2 business days" },
-      { label: "Business address", value: "B5, 2nd Floor, Haq Square Garden East, Karachi" }
-    ]
-  },
+    contact: {
+      title: "Contact MatchHai",
+      intro:
+        "For partnerships, onboarding, and support, contact us through the form below. We respond within 1-2 business days.",
+      detailsTitle: "Contact details",
+      details: [
+        { label: "Email", value: "admin@matchhai.com" },
+        { label: "Phone", value: "+92 323 8249779" },
+        { label: "Response time", value: "1-2 business days" },
+        { label: "Business address", value: "Garden East, Karachi" }
+      ]
+    },
   legal: {
     privacy: {
       title: "Privacy policy",
@@ -546,7 +550,7 @@ export const copy = {
         {
           title: "Contact",
           paragraphs: [
-            "If you have questions about privacy, contact us at matchhaiofficial@gmail.com."
+            "If you have questions about privacy, contact us at admin@matchhai.com."
           ]
         }
       ]
@@ -588,7 +592,7 @@ export const copy = {
         {
           title: "Bookings and payments",
           paragraphs: [
-            "Booking flows and payments are not live yet. When enabled, additional terms (including pricing, cancellations, and refunds) may apply and will be shown at the time of booking."
+            "Booking flows and payments are live. Additional terms (including pricing, cancellations, and refunds) are shown at the time of booking."
           ]
         },
         {
@@ -618,7 +622,7 @@ export const copy = {
         {
           title: "Governing law",
           paragraphs: [
-            "These Terms are governed by the laws of Pakistan. For questions, contact matchhaiofficial@gmail.com."
+            "These Terms are governed by the laws of Pakistan. For questions, contact admin@matchhai.com."
           ]
         }
       ]
@@ -626,17 +630,17 @@ export const copy = {
     refund: {
       title: "Refund policy",
       intro:
-        "Refund and cancellation policies will be shared at the time of booking.",
+        "Refund and cancellation policies are shown at the time of booking.",
       lastUpdated: "January 26, 2026",
       sections: [
         {
           title: "Current status",
           paragraphs: [
-            "MatchHai is in production and payments are not live yet. No charges are taken through the website at this time."
+            "MatchHai is live and accepts payments for bookings."
           ]
         },
         {
-          title: "When payments go live",
+          title: "Refund eligibility",
           bullets: [
             "Refund eligibility will depend on venue policies, timing of cancellation, and booking type (LAN session, court, or other venue).",
             "Any cancellation windows, partial refunds, no-show rules, and dispute flows will be displayed before you confirm a booking.",
@@ -645,18 +649,18 @@ export const copy = {
             "Technical issues may include power outages, internet failure, or equipment malfunction."
           ]
         },
-        {
-          title: "Contact",
-          paragraphs: [
-            "If you have questions about refunds, contact matchhaiofficial@gmail.com."
-          ]
-        }
+      {
+        title: "Contact",
+        paragraphs: [
+            "If you have questions about refunds, contact admin@matchhai.com."
+        ]
+      }
       ]
     }
   },
   footer: {
     tagline: "LAN-first matchmaking, team building, and bookings.",
-    linksTitle: "Legal",
+    linksTitle: "Links",
     legal: "(c) 2025 MatchHai. All rights reserved.",
     disclaimer: ""
   },
