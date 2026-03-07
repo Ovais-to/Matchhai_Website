@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { ContactForm } from "@/components/forms/ContactForm";
+import { Button } from "@/components/ui/Button";
 import { copy } from "@/lib/copy";
 import { useGsapReveal } from "@/lib/hooks/useGsapReveal";
 
@@ -47,7 +47,23 @@ export const ContactSection = () => {
             data-card
             data-reveal
           >
-            <ContactForm />
+            <div className="space-y-4">
+              <p className="text-sm font-semibold text-text-primary">
+                Direct verification contact
+              </p>
+              <p className="text-sm text-text-secondary">
+                For merchant account review, website verification, pricing confirmation, and onboarding support, contact MatchHai directly using the published details below.
+              </p>
+              <div className="grid gap-3 sm:grid-cols-2">
+                <Button href="mailto:admin@matchhai.com">Email MatchHai</Button>
+                <Button href="tel:+923238249779" variant="secondary">
+                  Call MatchHai
+                </Button>
+              </div>
+              <div className="rounded-2xl border border-border bg-bg-primary/60 p-4 text-sm text-text-secondary">
+                Payments are collected only for valid booking-related services. MatchHai does not facilitate gambling, betting, or chance-based transactions.
+              </div>
+            </div>
           </div>
         </div>
       </div>

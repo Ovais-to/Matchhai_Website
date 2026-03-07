@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Hero } from "@/components/home/Hero";
 import { AudienceSplit } from "@/components/home/sections/AudienceSplit";
 import { WhatIs } from "@/components/home/sections/WhatIs";
+import { BusinessDetailsSection } from "@/components/home/sections/BusinessDetailsSection";
 import { HowItWorksPreview } from "@/components/home/sections/HowItWorksPreview";
 import { GamesPreview } from "@/components/home/sections/GamesPreview";
 import { TrustPreview } from "@/components/home/sections/TrustPreview";
@@ -21,6 +22,7 @@ export default function HomePage() {
       <Hero />
       <AudienceSplit />
       <WhatIs />
+      <BusinessDetailsSection />
       <HowItWorksPreview />
       <GamesPreview />
       <TrustPreview />

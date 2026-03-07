@@ -12,23 +12,23 @@ export const copy = {
   site: {
     name: "MatchHai",
     legalName: "MatchHai",
-    location: "Garden East, Karachi",
+    location: "Business Address: Garden East, Karachi, Sindh, Pakistan",
     description:
-      "MatchHai is a Pakistan-first esports matchmaking platform for esports, LAN gaming (PC + console), and sports bookings.",
+      "MatchHai is a Pakistan-first skill-based esports matchmaking and venue booking platform for LAN gaming and indoor sports.",
     defaultMeta: {
-      title: "MatchHai - Esports Matchmaking, LAN Gaming & Sports Bookings",
+      title: "MatchHai - Skill-Based Esports Matchmaking and Venue Bookings",
       description:
-        "Discover matchrooms, manage teams, and book LAN gaming (PC + console) and sports venues.",
-      ogTitle: "MatchHai - Pakistan-first matchmaking, LAN gaming, and bookings",
+        "Discover skill-based matchrooms, coordinate teams, and book LAN gaming and sports venues in Pakistan.",
+      ogTitle: "MatchHai - Skill-based matchmaking, LAN gaming, and venue bookings",
       ogDescription:
-        "Matchrooms today, with LAN gaming (PC + console) and sports venue bookings."
+        "A skill-based platform for esports matchmaking, LAN gaming sessions, and venue bookings in Pakistan."
     }
   },
   statusLabels: {
     LIVE: "LIVE",
     BETA: "BETA",
-    PLANNED: "LIVE",
-    COMING_SOON: "LIVE"
+    PLANNED: "PLANNED",
+    COMING_SOON: "COMING SOON"
   },
   nav: {
     skipToContent: "Skip to content",
@@ -63,105 +63,127 @@ export const copy = {
     labelSeparator: ":"
   },
   hero: {
-    eyebrow: "Pakistan-first esports matchmaking - LAN + sports bookings",
+    eyebrow: "Skill-based esports matchmaking, LAN gaming, and venue bookings",
     title: "Squad Up. Play.",
     subtitle:
-      "MatchHai is a platform for esports (CS2, FC 26, Tekken 8) and sports (Indoor Cricket, Futsal, Padel, Pickleball), where players can find matchups, build teams, and book venues in one workflow.",
+      "MatchHai helps players create and join skill-based matchrooms, coordinate teams, and request bookings at partner venues. MatchHai does not offer gambling, betting, wagering, prize pools, or games of chance.",
     badges: [
-      { label: "Matchrooms", status: "LIVE" as FeatureStatus },
-      { label: "Teams", status: "LIVE" as FeatureStatus },
-      { label: "LAN gaming bookings", status: "LIVE" as FeatureStatus }
+      { label: "Skill-based matchrooms", status: "LIVE" as FeatureStatus },
+      { label: "Team coordination", status: "LIVE" as FeatureStatus },
+      { label: "Venue booking requests", status: "LIVE" as FeatureStatus }
     ],
-    primaryCta: { label: "Get Android app", href: `${routes.home}#download` },
-    secondaryCta: { label: "Join iOS waitlist", href: `${routes.home}#download` },
+    primaryCta: { label: "View business details", href: `${routes.home}#business-details` },
+    secondaryCta: { label: "Contact MatchHai", href: `${routes.home}#contact` },
     canvasAriaLabel: "MatchHai neon arena hero graphic",
     fallbackAlt: "MatchHai hero background"
-  },
-  trustSignals: {
-    title: "Trust-first by design",
-    items: [
-      "Pakistan-first product, built for local bandwidth and devices",
-      "Built for the local gaming ecosystem and zone & court operators",
-      "Transparent beta labeling - no overclaims",
-      "LAN gaming and sports bookings are live and clearly labeled",
-      "No dark patterns, fake counters, or misleading scarcity"
-    ]
   },
   audience: {
     players: {
       title: "For players & teams",
       description:
-        "Find the right matchroom, join with your role, and keep your squad organized.",
+        "Find the right matchroom, join with your role, and coordinate your squad before playtime.",
       bullets: [
         "Matchrooms with roles, slots, and join requests",
         "Team management with roster caps per game",
-        "Skill fairness bands + ELO rating (0-100)",
-        "LAN gaming sessions (PC + console) booking"
+        "Skill fairness bands for balanced matchmaking",
+        "Venue booking requests for LAN gaming and indoor sports"
       ],
       cta: { label: "Explore how it works", href: `${routes.home}#how-it-works` }
     },
     zones: {
       title: "For zone & court owners",
       description:
-        "List your zone or court and set pricing tiers for LAN + sports bookings.",
+        "List your zone or court, publish pricing, and receive booking requests from players.",
       bullets: [
-        "Zone & court onboarding for LAN gaming, sports, or hybrid spaces",
+        "Venue onboarding for LAN gaming, sports, or hybrid spaces",
         "Equipment + pricing tiers per game or sport",
-        "Booking intents with approvals + payment flow"
+        "Booking requests with approvals and service fee collection"
       ],
-      cta: { label: "List your zone or court", href: `${routes.home}#audience` }
+      cta: { label: "See business details", href: `${routes.home}#business-details` }
     }
   },
   home: {
     whatIs: {
       title: "What is MatchHai",
       description:
-        "MatchHai brings matchmaking, team management, and venue booking into a single flow for esports and sports communities in Pakistan.",
+        "MatchHai is a skill-based coordination platform for esports and venue bookings in Pakistan. Users pay for booking requests, venue usage, and platform service fees where applicable.",
       pillars: [
         {
           title: "Players",
           description:
-            "Discover matchrooms and play with balanced skill bands.",
+            "Discover skill-based matchrooms and coordinate fair play sessions.",
           status: "LIVE" as FeatureStatus
         },
         {
           title: "Teams",
           description:
-            "Manage rosters, roles, and matchroom invites across games.",
+            "Manage rosters, roles, and private invites across supported titles.",
           status: "LIVE" as FeatureStatus
         },
         {
-          title: "Zones & courts",
+          title: "Venues",
           description:
-            "Onboard your venue or court and get ready for booking intents.",
+            "Receive booking requests for LAN gaming and indoor sports sessions.",
           status: "LIVE" as FeatureStatus
         }
       ] as StatusedItem[]
+    },
+    businessDetails: {
+      title: "Business details",
+      description:
+        "This section is provided for payment-partner and customer verification. MatchHai sells coordination and booking services for skill-based esports and venue sessions.",
+      cards: [
+        {
+          title: "Business identity",
+          lines: [
+            "Business name: MatchHai",
+            "Website: https://matchhai.com",
+            "Email: admin@matchhai.com",
+            "Phone: +92 323 8249779"
+          ]
+        },
+        {
+          title: "Business address",
+          lines: [
+            "Garden East, Karachi, Sindh, Pakistan",
+            "Operating region: Pakistan",
+            "Service model: Mobile app and website-assisted booking workflow"
+          ]
+        },
+        {
+          title: "What users pay for",
+          lines: [
+            "Venue booking charges published by partner venues",
+            "Platform service fee on confirmed bookings",
+            "No gambling, betting, wagering, cash contests, or games of chance"
+          ]
+        }
+      ]
     },
     howItWorksPreview: {
       title: "How it works",
       steps: [
         {
-          title: "Find",
+          title: "Create or join",
           description:
-            "Choose your game, city, and skill band to browse matchrooms."
+            "Players create or join a skill-based matchroom by game, city, and slot availability."
         },
         {
-          title: "Matchroom",
+          title: "Coordinate",
           description:
-            "Join with your role, or request a slot with a join code."
+            "Teams confirm roles, venue preference, and session timing with private codes or approvals."
         },
         {
-          title: "Book & play",
+          title: "Request booking",
           description:
-            "Submit a booking intent for a zone, court, or LAN session, get approvals, and confirm playtime."
+            "A booking request is sent to the venue. Once the venue approves, the applicable booking charges and service fee are collected."
         }
       ]
     },
     gamesPreview: {
-      title: "Esports and sports",
+      title: "Supported services",
       esports: ["CS2", "FC 26", "Tekken 8"],
-      sportsRoadmap: ["Futsal", "Indoor Cricket", "Padel", "Pickleball"]
+      sportsRoadmap: ["LAN gaming sessions", "Indoor Cricket", "Futsal", "Padel"]
     },
     trustPreview: {
       title: "Trust & safety",
@@ -175,136 +197,93 @@ export const copy = {
           description: "Designed with zones, teams, and communities in mind."
         },
         {
-          title: "Beta transparency",
+          title: "No gambling or betting",
           description:
-            "Every capability is labeled clearly - no overclaims."
+            "MatchHai does not provide wagering, prize betting, or games of chance."
         },
         {
-          title: "Fairness bands",
+          title: "Skill-based usage",
           description:
-            "Skill bands and ELO ratings are in BETA and improve over time."
+            "Players are matched and coordinated using game, role, and skill context."
         },
         {
-          title: "LAN gaming (PC + console)",
+          title: "Clear payment purpose",
           description:
-            "LAN gaming sessions and venue bookings are live."
+            "Payments are for bookings and service fees, not for speculative outcomes."
         },
         {
-          title: "Local-first performance",
+          title: "Verifiable business contact",
           description:
-            "Optimized for Pakistani networks and low-end Android devices."
+            "Business address, phone, email, terms, privacy, and refund pages are published."
         }
       ]
     },
     pricing: {
-      title: "Pricing",
-      intro: "User pricing packages are listed in Pakistani Rupees (PKR). Final billing details will be published before launch.",
+      title: "Pricing in PKR",
+      intro: "All customer-facing prices are shown in Pakistani Rupees. Venue rates may differ by game, equipment, and session length.",
       plans: [
         {
-          name: "User Package 1",
-          price: "Rs. 100",
-          description: "Starter user package for basic matchmaking and team participation."
+          name: "Platform service fee",
+          price: "PKR 100",
+          description: "Charged on eligible confirmed booking requests created through MatchHai."
         },
         {
-          name: "User Package 2",
-          price: "Rs. 200",
-          description: "Advanced user package with enhanced matchmaking and team workflow access."
+          name: "Standard venue session",
+          price: "PKR 500",
+          description: "Example base rate for partner venue sessions. Actual venue pricing is set by the venue operator."
         },
         {
-          name: "User Package 3",
-          price: "Rs. 500",
-          description: "Premium user package with full matchmaking, team, and booking access."
+          name: "Monthly booking volume example",
+          price: "PKR 50,000+",
+          description: "Representative monthly transaction volume for merchant review and payment-partner assessment."
         }
       ]
     },
     ctaStrip: {
-    title: "Ready to play or list your zone or court",
+      title: "Need business verification details",
       description:
-        "Download the Android app today or join the iOS waitlist.",
-      primaryCta: { label: "Download for Android", href: `${routes.home}#download` },
-      secondaryCta: { label: "Join iOS waitlist", href: `${routes.home}#download` }
+        "Review MatchHai's service model, legal policies, pricing, and contact details, or reach us directly for compliance verification.",
+      primaryCta: { label: "View legal pages", href: routes.terms },
+      secondaryCta: { label: "Contact MatchHai", href: `${routes.home}#contact` }
     }
   },
   howItWorks: {
     title: "How MatchHai works",
     intro:
-      "A clear flow from onboarding to matchroom coordination and booking intent approvals.",
+      "A clear flow from player onboarding to skill-based coordination, venue approval, and booking confirmation.",
     steps: [
       {
         title: "Onboard",
         description:
-          "Choose games, set your location, and link external platforms.",
+          "Choose your game, city, and player details to join a skill-based coordination flow.",
         status: "LIVE" as FeatureStatus
       },
       {
         title: "Matchrooms",
         description:
-          "Structured slots, roles, join requests, and private codes.",
+          "Structured slots, roles, join requests, and private codes help players coordinate real sessions.",
         status: "LIVE" as FeatureStatus
       },
       {
-        title: "Booking intents",
+        title: "Venue approvals",
         description:
-          "Draft -> approvals -> payment -> confirmed.",
+          "Booking requests follow a request, venue approval, payment, and confirmation flow.",
         status: "LIVE" as FeatureStatus
       },
       {
-        title: "Skill fairness",
+        title: "Compliance guardrails",
         description:
-          "Bands + ELO ratings (0-100) to help balance teams.",
+          "MatchHai is a skill-based service platform and does not support betting, gambling, or chance-based payouts.",
         status: "LIVE" as FeatureStatus
       }
     ],
-    cta: { label: "Get the app", href: `${routes.home}#download` }
-  },
-  zones: {
-    title: "Zones & courts for gaming and sports",
-    intro:
-      "Bring visibility to your venue or court, fill slots faster, and manage pricing tiers.",
-    types: [
-      {
-        title: "Gaming zones",
-        description:
-          "PC and console setups with equipment details and pricing."
-      },
-      {
-        title: "Sports courts",
-        description:
-          "Courts, pitches, and indoor facilities with clear time slots."
-      },
-      {
-        title: "Hybrid venues",
-        description:
-          "Offer esports and sports in one managed booking flow."
-      }
-    ],
-    benefits: [
-      {
-        title: "Visibility",
-        description: "Reach players searching by game and location."
-      },
-      {
-        title: "Pricing tiers",
-        description: "Set equipment-based or time-based pricing."
-      },
-      {
-        title: "Promotions",
-        description: "Highlight peak and off-peak offers."
-      },
-      {
-        title: "Analytics",
-        description: "Demand insights and analytics."
-      }
-    ],
-    leadFormTitle: "List your zone or court",
-    leadFormDescription:
-      "Share your details and we will help you onboard."
+    cta: { label: "Contact MatchHai", href: `${routes.home}#contact` }
   },
   games: {
-    title: "Supported games",
+    title: "Supported categories",
     intro:
-      "MatchHai supports the most active esports and sports in Pakistan.",
-    esportsTitle: "Esports",
+      "MatchHai supports skill-based esports coordination and venue booking categories relevant to Pakistan.",
+    esportsTitle: "Esports matchmaking",
     esports: [
       {
         title: "CS2",
@@ -322,7 +301,7 @@ export const copy = {
         status: "LIVE" as FeatureStatus
       }
     ],
-    sportsTitle: "Sports",
+    sportsTitle: "Venue booking categories",
     sportsRoadmap: [
       { title: "Futsal", status: "LIVE" as FeatureStatus },
       { title: "Indoor Cricket", status: "LIVE" as FeatureStatus },
@@ -330,162 +309,20 @@ export const copy = {
       { title: "Pickleball", status: "LIVE" as FeatureStatus }
     ],
     disclaimer:
-      "Not affiliated with Valve, Sony, EA, Microsoft, FACEIT, Steam, PlayStation, or Xbox."
+      "Not affiliated with Valve, Sony, EA, Microsoft, FACEIT, Steam, PlayStation, or Xbox. MatchHai does not provide gambling or betting services."
   },
-  features: {
-    title: "Core platform features",
+  contact: {
+    title: "Contact MatchHai",
     intro:
-      "MatchHai's modules connect players, teams, and zones & courts without overpromising.",
-    sections: [
-      {
-        title: "Matchrooms",
-        items: [
-          {
-            label: "Slots and roles",
-            description: "Structured slots by role or position.",
-            status: "LIVE" as FeatureStatus
-          },
-          {
-            label: "Join codes",
-            description: "Private access and approved joins.",
-            status: "LIVE" as FeatureStatus
-          }
-        ]
-      },
-      {
-        title: "Teams",
-        items: [
-          {
-            label: "Roster caps",
-            description: "Game-specific caps and roster roles.",
-            status: "LIVE" as FeatureStatus
-          },
-          {
-            label: "Team invites",
-            description: "Invite players into teams or matchrooms.",
-            status: "LIVE" as FeatureStatus
-          }
-        ]
-      },
-      {
-        title: "Zones",
-        items: [
-          {
-            label: "Zone onboarding",
-            description: "Gaming, sports, and hybrid zone profiles.",
-            status: "LIVE" as FeatureStatus
-          },
-          {
-            label: "Equipment & pricing",
-            description: "Pricing tiers with equipment details.",
-            status: "LIVE" as FeatureStatus
-          }
-        ]
-      },
-      {
-        title: "Bookings",
-        items: [
-          {
-            label: "Booking intents",
-            description: "Draft -> approvals -> confirmed flow.",
-            status: "LIVE" as FeatureStatus
-          },
-          {
-            label: "Payments",
-            description: "Integrated payments.",
-            status: "LIVE" as FeatureStatus
-          },
-          {
-            label: "Disputes",
-            description: "Issue resolution workflows.",
-            status: "LIVE" as FeatureStatus
-          }
-        ]
-      },
-      {
-        title: "Skill & identity",
-        items: [
-          {
-            label: "Skill bands + ELO",
-            description: "0-100 rating with tiered bands.",
-            status: "LIVE" as FeatureStatus
-          },
-          {
-            label: "Platform linking",
-            description: "Steam, FACEIT, PSN, Xbox, EA links.",
-            status: "LIVE" as FeatureStatus
-          }
-        ]
-      },
-      {
-        title: "Operations",
-        items: [
-          {
-            label: "Notifications",
-            description: "Booking and matchroom updates.",
-            status: "LIVE" as FeatureStatus
-          },
-          {
-            label: "Analytics",
-            description: "Zone insights and trends.",
-            status: "LIVE" as FeatureStatus
-          }
-        ]
-      }
+      "For partnerships, merchant verification, onboarding, and support, contact MatchHai through the details below. We respond within 1-2 business days.",
+    detailsTitle: "Contact details",
+    details: [
+      { label: "Email", value: "admin@matchhai.com" },
+      { label: "Phone", value: "+92 323 8249779" },
+      { label: "Response time", value: "1-2 business days" },
+      { label: "Business address", value: "Garden East, Karachi, Sindh, Pakistan" }
     ]
   },
-  download: {
-    title: "Download MatchHai",
-    intro:
-      "Available on Android today. iOS launches via waitlist.",
-    androidCta: { label: "Download for Android", href: `${routes.home}#download` },
-    iosCta: { label: "Join iOS waitlist", href: "#waitlist" },
-    waitlistTitle: "iOS waitlist",
-    waitlistDescription:
-      "Get notified when the iOS app is ready."
-  },
-  faq: {
-    title: "Frequently asked questions",
-    intro: "Clear answers for players, teams, and zone & court owners.",
-    toggleLabels: {
-      open: "-",
-      closed: "+"
-    },
-    items: [
-      {
-        question: "Is MatchHai live",
-        answer:
-          "MatchHai is live. Matchrooms, teams, LAN gaming, and bookings are available."
-      },
-      {
-        question: "Do I need to be verified to join",
-        answer:
-          "Verification workflows are available. You can join matchrooms with approved access."
-      },
-      {
-        question: "Which games are supported",
-        answer:
-          "CS2, FC 26, and Tekken 8 are supported. Physical sports are on the roadmap."
-      },
-      {
-        question: "Can zone or court owners list their venue",
-        answer:
-          "Yes. Submit a zone interest form and our team will reach out for onboarding."
-      }
-    ]
-  },
-    contact: {
-      title: "Contact MatchHai",
-      intro:
-        "For partnerships, onboarding, and support, contact us through the form below. We respond within 1-2 business days.",
-      detailsTitle: "Contact details",
-      details: [
-        { label: "Email", value: "admin@matchhai.com" },
-        { label: "Phone", value: "+92 323 8249779" },
-        { label: "Response time", value: "1-2 business days" },
-        { label: "Business address", value: "Garden East, Karachi" }
-      ]
-    },
   legal: {
     privacy: {
       title: "Privacy policy",
@@ -503,6 +340,7 @@ export const copy = {
           title: "Information we collect",
           bullets: [
             "Information you provide: name, email, phone, city, and any details you submit in forms (e.g., waitlist or venue onboarding).",
+            "Transaction context: venue, game, booking amount, and booking timing needed to process confirmed services.",
             "Usage and device data: pages viewed, basic diagnostics, and device/browser information.",
             "Location signals: we may infer an approximate location (e.g., city) from your inputs or network signals to improve relevance.",
             "Cookies: small files used for basic site functionality and measurement."
@@ -513,6 +351,7 @@ export const copy = {
           bullets: [
             "Respond to requests and inquiries.",
             "Operate waitlists and venue onboarding workflows.",
+            "Process booking requests, service fees, and merchant verification workflows.",
             "Improve performance, reliability, and user experience.",
             "Detect and prevent abuse, fraud, or security issues."
           ]
@@ -596,6 +435,12 @@ export const copy = {
           ]
         },
         {
+          title: "No gambling or wagering",
+          paragraphs: [
+            "MatchHai is a skill-based matchmaking and venue-booking platform. It does not provide gambling, betting, wagering, games of chance, or prize-pool services."
+          ]
+        },
+        {
           title: "Intellectual property",
           paragraphs: [
             "MatchHai and its content (excluding user-submitted content) are owned by MatchHai or its licensors and protected by applicable laws."
@@ -646,7 +491,8 @@ export const copy = {
             "Any cancellation windows, partial refunds, no-show rules, and dispute flows will be displayed before you confirm a booking.",
             "If Team A does not arrive at the booked time, Team B will receive a refund of the amount they paid (subject to verification).",
             "If a technical issue at the zone/venue prevents the match from being played, both teams will receive a refund of the amount they paid (subject to verification).",
-            "Technical issues may include power outages, internet failure, or equipment malfunction."
+            "Technical issues may include power outages, internet failure, or equipment malfunction.",
+            "Platform service fees, if any, are only charged for valid confirmed bookings."
           ]
         },
       {
@@ -659,86 +505,10 @@ export const copy = {
     }
   },
   footer: {
-    tagline: "LAN-first matchmaking, team building, and bookings.",
+    tagline: "Skill-based matchmaking, team coordination, and venue booking services.",
     linksTitle: "Links",
-    legal: "(c) 2025 MatchHai. All rights reserved.",
+    legal: "(c) 2026 MatchHai. All rights reserved.",
     disclaimer: ""
-  },
-  forms: {
-    validation: {
-      required: "This field is required.",
-      email: "Enter a valid email address."
-    },
-    loading: "Sending...",
-    waitlist: {
-      title: "Join the iOS waitlist",
-      description: "We will email you when iOS is ready.",
-      fields: {
-        name: { label: "Full name", placeholder: "Your name" },
-        email: { label: "Email", placeholder: "you@example.com" },
-        city: { label: "City", placeholder: "Lahore" }
-      },
-      honeypot: {
-        label: "Leave this field empty",
-        placeholder: "Do not fill"
-      },
-      submit: "Join waitlist",
-      success: {
-        title: "You are on the list",
-        message: "We will notify you when iOS is ready."
-      },
-      error: {
-        title: "Something went wrong",
-        message: "Please try again in a moment."
-      }
-    },
-    zoneInterest: {
-      title: "List your zone or court",
-      description: "Tell us about your venue and we will follow up.",
-      fields: {
-        zoneName: { label: "Zone or court name", placeholder: "Your venue name" },
-        city: { label: "City", placeholder: "Karachi" },
-        contactName: { label: "Contact name", placeholder: "Your name" },
-        phone: { label: "Phone", placeholder: "+92 300 0000000" },
-        email: { label: "Email", placeholder: "you@example.com" },
-        games: { label: "Games or sports", placeholder: "CS2, Futsal" }
-      },
-      honeypot: {
-        label: "Leave this field empty",
-        placeholder: "Do not fill"
-      },
-      submit: "Submit zone or court interest",
-      success: {
-        title: "Thanks for reaching out",
-        message: "Our team will contact you shortly."
-      },
-      error: {
-        title: "Submission failed",
-        message: "Please try again in a moment."
-      }
-    },
-    contact: {
-      title: "Contact us",
-      description: "Share your query and we will respond quickly.",
-      fields: {
-        name: { label: "Full name", placeholder: "Your name" },
-        email: { label: "Email", placeholder: "you@example.com" },
-        message: { label: "Message", placeholder: "How can we help'" }
-      },
-      honeypot: {
-        label: "Leave this field empty",
-        placeholder: "Do not fill"
-      },
-      submit: "Send message",
-      success: {
-        title: "Message received",
-        message: "We will reply within 1-2 business days."
-      },
-      error: {
-        title: "Message not sent",
-        message: "Please try again in a moment."
-      }
-    }
   },
   errors: {
     boundaryTitle: "We hit a snag",
