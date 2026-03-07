@@ -21,7 +21,7 @@ export const BusinessDetailsSection = () => {
           </p>
         </div>
 
-        <div className="mt-6 grid gap-5 md:mt-8 md:grid-cols-3">
+        <div className="mt-6 max-w-xl md:mt-8">
           {copy.home.businessDetails.cards.map((card) => (
             <Card key={card.title} data-reveal>
               <h3 className="text-lg font-semibold text-text-primary">

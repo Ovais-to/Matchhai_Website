@@ -4,7 +4,6 @@ import { AudienceSplit } from "@/components/home/sections/AudienceSplit";
 import { WhatIs } from "@/components/home/sections/WhatIs";
 import { BusinessDetailsSection } from "@/components/home/sections/BusinessDetailsSection";
 import { HowItWorksPreview } from "@/components/home/sections/HowItWorksPreview";
-import { GamesPreview } from "@/components/home/sections/GamesPreview";
 import { TrustPreview } from "@/components/home/sections/TrustPreview";
 import { PricingSection } from "@/components/home/sections/PricingSection";
 import { ContactSection } from "@/components/home/sections/ContactSection";
@@ -24,7 +23,6 @@ export default function HomePage() {
       <WhatIs />
       <BusinessDetailsSection />
       <HowItWorksPreview />
-      <GamesPreview />
       <TrustPreview />
       <PricingSection />
       <ContactSection />

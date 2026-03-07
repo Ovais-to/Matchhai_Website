@@ -12,7 +12,7 @@ export const copy = {
   site: {
     name: "MatchHai",
     legalName: "MatchHai",
-    location: "Business Address: Garden East, Karachi, Sindh, Pakistan",
+    location: "Business Address: B5, Haq Square, Garden East, Karachi, Sindh, Pakistan",
     description:
       "MatchHai is a Pakistan-first skill-based esports matchmaking and venue booking platform for LAN gaming and indoor sports.",
     defaultMeta: {
@@ -32,12 +32,12 @@ export const copy = {
   },
   nav: {
     skipToContent: "Skip to content",
-    links: [
-      { label: "Home", href: routes.home },
-      { label: "How it works", href: routes.howItWorks },
-      { label: "Games", href: `${routes.home}#games` },
-      { label: "Zones", href: `${routes.home}#audience` },
-      { label: "Trust", href: `${routes.home}#trust` },
+      links: [
+        { label: "Home", href: routes.home },
+        { label: "How it works", href: routes.howItWorks },
+        { label: "Business details", href: `${routes.home}#business-details` },
+        { label: "Zones", href: `${routes.home}#audience` },
+        { label: "Trust", href: `${routes.home}#trust` },
       { label: "Pricing", href: `${routes.home}#pricing` },
       { label: "Contact", href: `${routes.home}#contact` },
       { label: "Download", href: `${routes.home}#download` }
@@ -134,23 +134,6 @@ export const copy = {
         "This section is provided for payment-partner and customer verification. MatchHai sells coordination and booking services for skill-based esports and venue sessions.",
       cards: [
         {
-          title: "Business identity",
-          lines: [
-            "Business name: MatchHai",
-            "Website: https://matchhai.com",
-            "Email: admin@matchhai.com",
-            "Phone: +92 323 8249779"
-          ]
-        },
-        {
-          title: "Business address",
-          lines: [
-            "Garden East, Karachi, Sindh, Pakistan",
-            "Operating region: Pakistan",
-            "Service model: Mobile app and website-assisted booking workflow"
-          ]
-        },
-        {
           title: "What users pay for",
           lines: [
             "Venue booking charges published by partner venues",
@@ -179,11 +162,6 @@ export const copy = {
             "A booking request is sent to the venue. Once the venue approves, the applicable booking charges and service fee are collected."
         }
       ]
-    },
-    gamesPreview: {
-      title: "Supported services",
-      esports: ["CS2", "FC 26", "Tekken 8"],
-      sportsRoadmap: ["LAN gaming sessions", "Indoor Cricket", "Futsal", "Padel"]
     },
     trustPreview: {
       title: "Trust & safety",
@@ -320,7 +298,7 @@ export const copy = {
       { label: "Email", value: "admin@matchhai.com" },
       { label: "Phone", value: "+92 323 8249779" },
       { label: "Response time", value: "1-2 business days" },
-      { label: "Business address", value: "Garden East, Karachi, Sindh, Pakistan" }
+      { label: "Business address", value: "B5, Haq Square, Garden East, Karachi, Sindh, Pakistan" }
     ]
   },
   legal: {
