@@ -1,0 +1,19 @@
+import type { Metadata } from "next";
+import { DeepLinkRoute } from "@/components/deeplink/DeepLinkRoute";
+import { bridgeConfig } from "@/lib/deepLinks";
+
+const config = bridgeConfig.venue;
+
+export const metadata: Metadata = {
+  title: config.metaTitle,
+  description: config.metaDescription,
+  robots: { index: false, follow: false }
+};
+
+export function generateStaticParams() {
+  return [{ id: "_" }];
+}
+
+export default function VenueBridgePage() {
+  return <DeepLinkRoute entityType="venue" />;
+}
