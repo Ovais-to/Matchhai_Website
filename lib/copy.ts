@@ -480,6 +480,70 @@ export const copy = {
         ]
       }
       ]
+    },
+    deleteAccount: {
+      title: "MatchHai Account Deletion Request",
+      intro:
+        "At MatchHai, users can request deletion of their account and associated personal data at any time.",
+      lastUpdated: "June 10, 2026",
+      supportEmail: "support@matchhai.com",
+      sections: [
+        {
+          title: "How to delete your account",
+          paragraphs: [
+            "If you still have access to the MatchHai app, you can delete your account from inside the app."
+          ],
+          bullets: [
+            "Open the MatchHai app.",
+            "Go to Profile or Account Settings.",
+            "Select Delete Account and follow the on-screen instructions."
+          ]
+        },
+        {
+          title: "If you no longer have app access",
+          paragraphs: [
+            "You can request account deletion by emailing support@matchhai.com.",
+            "Please send the request from the email address or phone number linked to your MatchHai account so we can verify ownership before processing the deletion."
+          ]
+        },
+        {
+          title: "Data we delete",
+          bullets: [
+            "Account profile information.",
+            "Name, email address, phone number, and profile details.",
+            "Player profile and preferences.",
+            "Team-related personal data.",
+            "Matchroom participation data.",
+            "App activity associated with the account.",
+            "Chat or user-generated content where deletion is technically and legally possible."
+          ]
+        },
+        {
+          title: "Data we may retain",
+          paragraphs: [
+            "Some records may be retained where required or reasonably necessary for legal, security, fraud prevention, dispute resolution, tax, accounting, payment or booking compliance, support, abuse investigation, or dispute handling purposes.",
+            "This may include booking records, payment or transaction references, support history, abuse reports, fraud prevention logs, tax and accounting records, legal compliance records, and dispute-related records."
+          ]
+        },
+        {
+          title: "Deletion timeline",
+          paragraphs: [
+            "Account deletion requests are normally processed within 30 days after verification."
+          ]
+        },
+        {
+          title: "Privacy policy",
+          paragraphs: [
+            "For more information about how MatchHai handles personal data, review our Privacy policy."
+          ]
+        },
+        {
+          title: "Contact",
+          paragraphs: [
+            "For any questions about account deletion or privacy, contact us at support@matchhai.com."
+          ]
+        }
+      ]
     }
   },
   footer: {

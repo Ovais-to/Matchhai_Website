@@ -47,6 +47,12 @@ export const Footer = () => {
           <Link href={routes.refund} className="block hover:text-text-primary">
             {copy.legal.refund.title}
           </Link>
+          <Link
+            href={routes.deleteAccount}
+            className="block hover:text-text-primary"
+          >
+            Account deletion
+          </Link>
         </div>
       </div>
       <div className="border-t border-border">

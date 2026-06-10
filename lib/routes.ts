@@ -3,5 +3,6 @@ export const routes = {
   howItWorks: "/how-it-works",
   privacy: "/privacy",
   terms: "/terms",
-  refund: "/refund"
+  refund: "/refund",
+  deleteAccount: "/delete-account"
 };
