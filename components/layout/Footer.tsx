@@ -48,6 +48,12 @@ export const Footer = () => {
             {copy.legal.refund.title}
           </Link>
           <Link
+            href={routes.childSafetyStandards}
+            className="block hover:text-text-primary"
+          >
+            {copy.legal.childSafetyStandards.title}
+          </Link>
+          <Link
             href={routes.deleteAccount}
             className="block hover:text-text-primary"
           >

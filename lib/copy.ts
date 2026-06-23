@@ -481,6 +481,64 @@ export const copy = {
       }
       ]
     },
+    childSafetyStandards: {
+      title: "Child Safety Standards",
+      header: "MatchHai Child Safety Standards",
+      intro:
+        "MatchHai is committed to child safety and maintaining a safe platform for users.",
+      lastUpdated: "June 2026",
+      contactEmail: "ovais@matchhai.com",
+      sections: [
+        {
+          title: "Our commitment to child safety",
+          paragraphs: [
+            "MatchHai is committed to maintaining a safe platform and protecting children from harm, abuse, exploitation, and unsafe conduct.",
+            "These standards explain our policy against Child Sexual Abuse and Exploitation (CSAE), Child Sexual Abuse Material (CSAM), grooming, exploitation, and any content or conduct that harms or endangers children."
+          ]
+        },
+        {
+          title: "Zero tolerance for CSAE and CSAM",
+          paragraphs: [
+            "MatchHai has a zero tolerance policy for Child Sexual Abuse and Exploitation (CSAE), Child Sexual Abuse Material (CSAM), grooming, exploitation, or any content or conduct that harms or endangers children.",
+            "Users must not upload, share, request, promote, or engage in any content or behavior involving CSAE or CSAM. Any such activity is strictly prohibited on MatchHai."
+          ]
+        },
+        {
+          title: "Reporting child safety concerns",
+          paragraphs: [
+            "Users can report safety concerns through the in-app report/support options where available, or by contacting us at ovais@matchhai.com.",
+            "Reports involving child safety, CSAE, or CSAM are treated as serious safety reports."
+          ]
+        },
+        {
+          title: "How MatchHai reviews and acts on reports",
+          paragraphs: [
+            "MatchHai reviews child safety reports and may take enforcement action based on the nature and severity of the report.",
+            "Enforcement action may include removing illegal or harmful content, restricting features, suspending accounts, banning users, and preserving or sharing relevant information where required by applicable law."
+          ]
+        },
+        {
+          title: "Legal compliance and reporting",
+          paragraphs: [
+            "Where MatchHai becomes aware of CSAM or unlawful child exploitation activity, MatchHai may report it to relevant authorities, law enforcement, or child safety organizations where required by law.",
+            "MatchHai may cooperate with valid legal requests and applicable child safety reporting obligations."
+          ]
+        },
+        {
+          title: "User conduct and account enforcement",
+          paragraphs: [
+            "Users must not use MatchHai to exploit, endanger, groom, harass, threaten, or otherwise harm children.",
+            "Accounts involved in CSAE, CSAM, grooming, exploitation, or other child safety violations may be removed or permanently banned."
+          ]
+        },
+        {
+          title: "Child safety contact",
+          paragraphs: [
+            "For child safety compliance questions or urgent reports, contact MatchHai at ovais@matchhai.com."
+          ]
+        }
+      ]
+    },
     deleteAccount: {
       title: "MatchHai Account Deletion Request",
       intro:

@@ -4,5 +4,6 @@ export const routes = {
   privacy: "/privacy",
   terms: "/terms",
   refund: "/refund",
+  childSafetyStandards: "/child-safety-standards",
   deleteAccount: "/delete-account"
 };
