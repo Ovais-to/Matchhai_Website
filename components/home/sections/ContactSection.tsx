@@ -12,8 +12,8 @@ export const ContactSection = () => {
   return (
     <section id="contact" className="section" ref={ref}>
       <div className="container">
-        <div className="grid gap-8 md:grid-cols-[1fr_1.15fr] md:items-start">
-          <div className="space-y-4">
+        <div className="grid gap-5 md:grid-cols-[1.05fr_0.95fr] md:items-stretch md:gap-6 lg:gap-8">
+          <div className="space-y-3 sm:space-y-4">
             <h2 className="section-title" data-reveal>
               {copy.contact.title}
             </h2>
@@ -21,21 +21,28 @@ export const ContactSection = () => {
               {copy.contact.intro}
             </p>
             <div
-              className="group surface-card p-5 sm:p-6"
+              className="group surface-card p-4 sm:p-5 lg:p-6"
               data-card
               data-reveal
             >
               <p className="text-sm font-semibold text-text-primary">
                 {copy.contact.detailsTitle}
               </p>
-              <div className="mt-3 space-y-2 text-sm text-text-secondary">
+              <div className="mt-3 space-y-2.5 text-sm leading-relaxed text-text-secondary">
                 {copy.contact.details.map((detail) => (
-                  <p key={detail.label}>
+                  <p key={detail.label} className="break-words">
                     <span className="text-text-muted">
                       {detail.label}
                       {copy.symbols.labelSeparator}
                     </span>{" "}
-                    {detail.value}
+                    {detail.href ? (
+                      <a
+                        className="focus-ring rounded-sm hover:text-text-primary"
+                        href={detail.href}
+                      >
+                        {detail.value}
+                      </a>
+                    ) : detail.value}
                   </p>
                 ))}
               </div>
@@ -43,27 +50,19 @@ export const ContactSection = () => {
           </div>
 
           <div
-            className="group surface-card p-5 shadow-[0_0_32px_rgba(0,0,0,0.22)] sm:p-7"
+            className="group surface-card flex items-center p-4 shadow-[0_0_32px_rgba(0,0,0,0.22)] sm:p-5 lg:p-7"
             data-card
             data-reveal
           >
-            <div className="space-y-4">
-              <p className="text-sm font-semibold text-text-primary">
-                Direct verification contact
-              </p>
-              <p className="text-sm text-text-secondary">
-                For merchant account review, website verification, pricing confirmation, and onboarding support, contact MatchHai directly using the published details below.
-              </p>
-              <div className="grid gap-3 sm:grid-cols-2">
-                <Button href="mailto:admin@matchhai.com">Email MatchHai</Button>
-                <Button href="tel:+923238249779" variant="secondary">
-                  Call MatchHai
-                </Button>
-              </div>
-              <div className="rounded-2xl border border-border bg-bg-primary/60 p-4 text-sm text-text-secondary">
-                Payments are collected only for valid booking-related services. MatchHai does not facilitate gambling, betting, or chance-based transactions.
-              </div>
+            <div className="grid w-full gap-3 sm:grid-cols-2">
+              <Button href={copy.contact.supportEmailHref}>Email Matchhai</Button>
+              <Button href={copy.contact.phoneHref} variant="secondary">
+                Call Matchhai
+              </Button>
             </div>
+            <p className="mt-4 w-full rounded-xl border border-border bg-bg-primary/60 p-4 text-sm leading-relaxed text-text-secondary">
+              Payments are collected only for valid booking-related services. Matchhai does not facilitate gambling, betting, or chance-based transactions.
+            </p>
           </div>
         </div>
       </div>

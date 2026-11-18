@@ -9,7 +9,14 @@ const accountDeletion = copy.legal.deleteAccount;
 
 export const metadata: Metadata = {
   title: accountDeletion.title,
-  description: accountDeletion.intro
+  description: accountDeletion.intro,
+  alternates: { canonical: "https://matchhai.com/delete-account/" },
+  openGraph: {
+    title: accountDeletion.title,
+    description: accountDeletion.intro,
+    url: "https://matchhai.com/delete-account/",
+    type: "website"
+  }
 };
 
 export default function DeleteAccountPage() {
@@ -19,21 +26,21 @@ export default function DeleteAccountPage() {
     <section className="section relative overflow-hidden">
       <NeonBackdrop />
       <div className="container">
-        <Reveal className="space-y-10">
+        <Reveal className="space-y-8 md:space-y-10">
           <h1 className="page-title" data-reveal>
             {accountDeletion.title}
           </h1>
-          <div className="space-y-3" data-reveal>
-            <p className="section-lede">{accountDeletion.intro}</p>
+          <div className="space-y-3 rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6 md:p-7" data-reveal>
+            <p className="section-lede max-w-3xl">{accountDeletion.intro}</p>
             <p className="text-sm text-text-muted">
-              Last updated: {accountDeletion.lastUpdated}
+              Effective date: {accountDeletion.lastUpdated}
             </p>
           </div>
 
-          <div className="reading space-y-8">
+          <div className="reading space-y-10 md:space-y-12">
             {accountDeletion.sections.map((section) => (
-              <section key={section.title} className="space-y-3" data-reveal>
-                <h2 className="text-xl font-semibold text-text-primary">
+              <section key={section.title} className="space-y-3 border-t border-white/10 pt-6 first:border-0 first:pt-0 sm:pt-7" data-reveal>
+                <h2 className="text-lg font-semibold leading-snug text-text-primary sm:text-xl">
                   {section.title}
                 </h2>
                 {section.paragraphs?.map((p) => {
@@ -57,7 +64,7 @@ export default function DeleteAccountPage() {
                   if (section.title === "Privacy policy") {
                     return (
                       <p key={p} className="text-text-secondary">
-                        For more information about how MatchHai handles personal
+                        For more information about how Matchhai handles personal
                         data, review our{" "}
                         <Link
                           href={routes.privacy}

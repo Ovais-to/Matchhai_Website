@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
 import { Reveal } from "@/components/ui/Reveal";
 import { NeonBackdrop } from "@/components/NeonBackdrop";
-import { StatusBadge } from "@/components/ui/StatusBadge";
 import { Button } from "@/components/ui/Button";
 import { copy } from "@/lib/copy";
 
 export const metadata: Metadata = {
   title: `${copy.site.name} — ${copy.howItWorks.title}`,
-  description: copy.howItWorks.intro
+  description: copy.howItWorks.intro,
+  alternates: { canonical: "https://matchhai.com/how-it-works/" },
+  openGraph: {
+    title: `${copy.site.name} — ${copy.howItWorks.title}`,
+    description: copy.howItWorks.intro,
+    url: "https://matchhai.com/how-it-works/",
+    type: "website"
+  }
 };
 
 export default function HowItWorksPage() {
@@ -43,7 +49,6 @@ export default function HowItWorksPage() {
                       {step.title}
                     </h2>
                   </div>
-                  <StatusBadge status={step.status} />
                 </div>
                 <p className="mt-3 text-sm text-text-secondary">
                   {step.description}

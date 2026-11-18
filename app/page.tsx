@@ -12,7 +12,14 @@ import { copy } from "@/lib/copy";
 
 export const metadata: Metadata = {
   title: copy.site.defaultMeta.title,
-  description: copy.site.defaultMeta.description
+  description: copy.site.defaultMeta.description,
+  alternates: { canonical: "https://matchhai.com/" },
+  openGraph: {
+    title: copy.site.defaultMeta.ogTitle,
+    description: copy.site.defaultMeta.ogDescription,
+    url: "https://matchhai.com/",
+    type: "website"
+  }
 };
 
 export default function HomePage() {

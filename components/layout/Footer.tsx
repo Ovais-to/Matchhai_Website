@@ -27,7 +27,16 @@ export const Footer = () => {
                 {detail.label}
                 {copy.symbols.labelSeparator}
               </span>{" "}
-              {detail.value}
+              {detail.href ? (
+                <a
+                  href={detail.href}
+                  className="break-words underline-offset-4 hover:text-text-primary hover:underline"
+                >
+                  {detail.value}
+                </a>
+              ) : (
+                <span className="break-words">{detail.value}</span>
+              )}
             </p>
           ))}
         </div>
@@ -37,6 +46,12 @@ export const Footer = () => {
           </p>
           <Link href={routes.howItWorks} className="block hover:text-text-primary">
             How it works
+          </Link>
+          <Link
+            href={routes.servicePolicy}
+            className="block hover:text-text-primary"
+          >
+            {copy.legal.servicePolicy.title}
           </Link>
           <Link href={routes.privacy} className="block hover:text-text-primary">
             {copy.legal.privacy.title}

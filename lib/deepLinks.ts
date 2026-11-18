@@ -91,9 +91,9 @@ export const bridgeConfig: Record<EntityType, BridgeConfig> = {
     basePath: "matchrooms",
     requiresId: true,
     title: "Open Matchroom",
-    description: "Open this matchroom in the MatchHai app.",
-    metaTitle: "Open MatchHai Matchroom",
-    metaDescription: "Open this matchroom in the MatchHai app.",
+    description: "Open this matchroom in the Matchhai app.",
+    metaTitle: "Open Matchhai Matchroom",
+    metaDescription: "Open this matchroom in the Matchhai app.",
     buildDeepLink: (id?: string) => (id ? buildMatchroomDeepLink(id) : "")
   },
   team: {
@@ -101,9 +101,9 @@ export const bridgeConfig: Record<EntityType, BridgeConfig> = {
     basePath: "teams",
     requiresId: true,
     title: "Open Team",
-    description: "Open this team in the MatchHai app.",
-    metaTitle: "Open MatchHai Team",
-    metaDescription: "Open this team in the MatchHai app.",
+    description: "Open this team in the Matchhai app.",
+    metaTitle: "Open Matchhai Team",
+    metaDescription: "Open this team in the Matchhai app.",
     buildDeepLink: (id?: string) => (id ? buildTeamDeepLink(id) : "")
   },
   profile: {
@@ -111,9 +111,9 @@ export const bridgeConfig: Record<EntityType, BridgeConfig> = {
     basePath: "profile",
     requiresId: true,
     title: "Open Profile",
-    description: "Open this profile in the MatchHai app.",
-    metaTitle: "Open MatchHai Profile",
-    metaDescription: "Open this profile in the MatchHai app.",
+    description: "Open this profile in the Matchhai app.",
+    metaTitle: "Open Matchhai Profile",
+    metaDescription: "Open this profile in the Matchhai app.",
     buildDeepLink: (id?: string) => (id ? buildProfileDeepLink(id) : "")
   },
   venue: {
@@ -121,9 +121,9 @@ export const bridgeConfig: Record<EntityType, BridgeConfig> = {
     basePath: "venues",
     requiresId: true,
     title: "Open Venue",
-    description: "Open this venue in the MatchHai app.",
-    metaTitle: "Open MatchHai Venue",
-    metaDescription: "Open this venue in the MatchHai app.",
+    description: "Open this venue in the Matchhai app.",
+    metaTitle: "Open Matchhai Venue",
+    metaDescription: "Open this venue in the Matchhai app.",
     buildDeepLink: (id?: string) => (id ? buildVenueDeepLink(id) : "")
   },
   booking: {
@@ -131,9 +131,9 @@ export const bridgeConfig: Record<EntityType, BridgeConfig> = {
     basePath: "booking",
     requiresId: true,
     title: "Open Booking",
-    description: "Open your booking status in the MatchHai app.",
-    metaTitle: "Open MatchHai Booking",
-    metaDescription: "Open your booking status in the MatchHai app.",
+    description: "Open your booking status in the Matchhai app.",
+    metaTitle: "Open Matchhai Booking",
+    metaDescription: "Open your booking status in the Matchhai app.",
     buildDeepLink: (id?: string) => (id ? buildBookingDeepLink(id) : "")
   },
   wallet: {
@@ -141,9 +141,9 @@ export const bridgeConfig: Record<EntityType, BridgeConfig> = {
     basePath: "wallet",
     requiresId: false,
     title: "Open Wallet",
-    description: "Open your wallet in the MatchHai app.",
-    metaTitle: "Open MatchHai Wallet",
-    metaDescription: "Open your wallet in the MatchHai app.",
+    description: "Open your wallet in the Matchhai app.",
+    metaTitle: "Open Matchhai Wallet",
+    metaDescription: "Open your wallet in the Matchhai app.",
     buildDeepLink: () => buildWalletDeepLink()
   },
   notifications: {
@@ -151,9 +151,9 @@ export const bridgeConfig: Record<EntityType, BridgeConfig> = {
     basePath: "notifications",
     requiresId: false,
     title: "Open Notifications",
-    description: "Open your notifications in the MatchHai app.",
-    metaTitle: "Open MatchHai Notifications",
-    metaDescription: "Open your notifications in the MatchHai app.",
+    description: "Open your notifications in the Matchhai app.",
+    metaTitle: "Open Matchhai Notifications",
+    metaDescription: "Open your notifications in the Matchhai app.",
     buildDeepLink: () => buildNotificationsDeepLink()
   }
 };

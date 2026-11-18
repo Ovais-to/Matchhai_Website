@@ -11,9 +11,9 @@ export const AudienceSplit = () => {
 
   return (
     <section id="audience" className="section" ref={ref}>
-      <div className="container grid gap-5 md:gap-6 md:grid-cols-2">
+      <div className="container grid items-stretch gap-4 sm:gap-5 md:grid-cols-2 md:gap-6">
         <div
-          className="group surface-card space-y-4 shadow-[0_0_32px_rgba(0,0,0,0.28)]"
+          className="group surface-card flex h-full flex-col gap-4 shadow-[0_0_32px_rgba(0,0,0,0.28)]"
           data-card
           data-reveal
         >
@@ -24,22 +24,22 @@ export const AudienceSplit = () => {
           <p className="section-kicker">
             {copy.audience.players.title}
           </p>
-          <h2 className="text-xl font-semibold text-text-primary sm:text-2xl">
+          <h2 className="max-w-[34ch] text-xl font-semibold leading-snug text-text-primary sm:text-2xl">
             {copy.audience.players.description}
           </h2>
-          <ul className="space-y-2 text-sm text-text-secondary">
+          <ul className="space-y-2.5 text-sm leading-relaxed text-text-secondary">
             {copy.audience.players.bullets.map((bullet) => (
               <li key={bullet}>{bullet}</li>
             ))}
           </ul>
-          <div className="pt-4">
+          <div className="mt-auto pt-2">
             <Button href={copy.audience.players.cta.href} variant="secondary">
               {copy.audience.players.cta.label}
             </Button>
           </div>
         </div>
         <div
-          className="group surface-card space-y-4 shadow-[0_0_32px_rgba(0,0,0,0.28)]"
+          className="group surface-card flex h-full flex-col gap-4 shadow-[0_0_32px_rgba(0,0,0,0.28)]"
           data-card
           data-reveal
         >
@@ -50,15 +50,15 @@ export const AudienceSplit = () => {
           <p className="section-kicker">
             {copy.audience.zones.title}
           </p>
-          <h2 className="text-xl font-semibold text-text-primary sm:text-2xl">
+          <h2 className="max-w-[34ch] text-xl font-semibold leading-snug text-text-primary sm:text-2xl">
             {copy.audience.zones.description}
           </h2>
-          <ul className="space-y-2 text-sm text-text-secondary">
+          <ul className="space-y-2.5 text-sm leading-relaxed text-text-secondary">
             {copy.audience.zones.bullets.map((bullet) => (
               <li key={bullet}>{bullet}</li>
             ))}
           </ul>
-          <div className="pt-4">
+          <div className="mt-auto pt-2">
             <Button href={copy.audience.zones.cta.href}>
               {copy.audience.zones.cta.label}
             </Button>

@@ -38,8 +38,8 @@ export const DeepLinkBridge = ({
   description,
   appDeepLink,
   entityId,
-  primaryButtonLabel = "Open in MatchHai App",
-  downloadLabel = "Download MatchHai",
+  primaryButtonLabel = "Open in Matchhai App",
+  downloadLabel = "Download Matchhai",
   unavailable = false
 }: DeepLinkBridgeProps) => {
   // Guards against repeated/looping launches: we auto-attempt at most once.
@@ -74,12 +74,12 @@ export const DeepLinkBridge = ({
       <div className="container">
         <div className="mx-auto max-w-xl">
           <div className="surface-card px-6 py-10 text-center sm:px-10 sm:py-12">
-            <p className="section-kicker">MatchHai</p>
+            <p className="section-kicker">Matchhai</p>
             <h1 className="page-title mt-3">{title}</h1>
 
             {unavailable ? (
               <p className="section-lede mx-auto max-w-md">
-                This link looks incomplete or may have expired. Open the MatchHai
+                This link looks incomplete or may have expired. Open the Matchhai
                 app to continue, or download it to get started.
               </p>
             ) : (
@@ -103,7 +103,7 @@ export const DeepLinkBridge = ({
 
             {canOpen && attempted ? (
               <p className="mt-6 text-xs text-text-muted">
-                App didn&apos;t open? Make sure MatchHai is installed, then tap
+                App didn&apos;t open? Make sure Matchhai is installed, then tap
                 &ldquo;{primaryButtonLabel}&rdquo; again.
               </p>
             ) : null}
